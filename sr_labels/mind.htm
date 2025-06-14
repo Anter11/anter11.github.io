@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MIND Produkcija</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+    });
+  </script>
+  <style>
+	.navbar {
+	  background-image: linear-gradient(#FAFAFA, #E9E9E9);
+	  padding-top: 0px; 
+	  padding-bottom: 0px; 
+	}
+	
+	ul.dropdown-menu {
+	  padding-top: 5px;
+      padding-right: 0px;
+      padding-bottom: 5px;
+      padding-left: 0px;
+	  box-shadow: 0 0px 14px rgba(0, 0, 0, 0.2);
+	  font-size: 16px;
+	  width: 175px;
+	  border-top-width: 2px;
+      border-right-width: 2px;
+      border-bottom-width: 2px;
+      border-left-width: 2px;
+      border-top-style: solid;
+      border-right-style: solid;
+      border-bottom-style: solid;
+      border-left-style: solid;
+	  border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+      border-bottom-left-radius: 6px;
+	}
+	
+	.dropdown-menu>li {
+	  line-height: 20px;
+	  padding-top: 2px;
+      padding-right: 20px;
+      padding-bottom: 2px;
+      padding-left: 20px;
+	}
+	
+	.dropdown-menu>li>a {
+	  font-size: 14px;
+	  line-height: 20px;
+	  height: 20px;
+	}
+	
+	.navbar .nav>li>.dropdown-menu:before {
+	  position: absolute;
+      top: -7px;
+      left: 9px;
+      display: inline-block;
+      border-right-width: 7px;
+	  border-right-style: solid;
+	  border-right-color: transparent;
+	  border-bottom-width: 7px;
+      border-bottom-style: solid;
+      border-bottom-color: #CCC;
+      border-left-width: 7px;
+      border-left-style: solid;
+      border-left-color: transparent;
+      border-bottom-color: rgba(0, 0, 0, 0.2);
+      content: '';
+	}
+	
+	.navbar .nav>li>.dropdown-menu:after {
+	  position: absolute;
+      top: -6px;
+      left: 10px;
+      display: inline-block;
+	  border-right-width: 6px;
+      border-right-style: solid;
+      border-right-color: transparent;
+	  border-bottom-width: 6px;
+      border-bottom-style: solid;
+      border-bottom-color: rgb(255, 255, 255);
+	  border-left-width: 6px;
+      border-left-style: solid;
+      border-left-color: transparent;
+	  content: '';
+	}
+	
+	.navbar .nav>li {
+	  padding-top: 4px;
+	  padding-bottom: 4px;
+	}
+	
+	.navbar .nav>li>a {
+      float: right;
+      padding: 10px 15px 10px;
+      color: #6A6A6A;
+      text-decoration: none;
+      text-shadow: 0 1px 0 #fff;
+    }
+    .navbar .nav>li>a:hover {
+      color: #202020;
+      text-decoration: none;
+      background-color: transparent;
+    }
+	
+	.dropdown-menu>li>a {
+	  color: #404040;
+	}
+	.dropdown-menu>li>a:hover {
+	  text-decoration: none;
+	}
+	
+	.dropdown-menu>li>a>div:hover {
+	  background-color: #E5E5E5 !important;
+	}
+	
+	.brand {
+      font-size: 20px;
+	  color: #303030;
+	}
+	
+	li {
+      line-height: 20px;
+    }
+	.nav {
+	  float: right;
+	}
+	.nav-collapse ul.nav li:hover {
+      background-color: #E3E3E3;
+    }
+	
+	body, body>.container>.row>.col-sm-4>.sticky-top>.card>.container>ul>li>a {
+      margin: 0;
+      font-family: "Lato", "Helvetica Neue", Helvetica,Arial,sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      color: #303030;
+	  background-color: #FFFFFF;
+    }
+	
+	.fa-film, .fa-compact-disc, .fa-image {
+	  font-size: 18px;
+	}
+	
+	h1, h2, h3, h4, h5 {
+      margin: 10px 0;
+      font-family: inherit;
+      font-weight: bold;
+      line-height: 20px;
+      color: inherit;
+      text-rendering: optimizelegibility;
+    }
+	
+	h1, h2, h3 {
+      line-height: 40px;
+    }
+	
+	h1 {
+	  font-size: 38.5px;
+	}
+	
+	.page-header {
+      padding-bottom: 15px;
+      margin: 25px 0 25px;
+      border-bottom: 1px solid #eee;
+    }
+	
+	table {
+	  background-color: transparent;
+	  border-spacing: 0;
+	}
+	
+	.table-bordered {
+	  border: 1px solid #ddd;
+	  border-radius: 4px;
+	  border-left: 0;
+	  border-collapse: separate;
+	}
+	
+	.table-bordered thead:first-child tr:first-child>th:first-child, .table-bordered tbody:first-child tr:first-child>td:first-child, .table-bordered tbody:first-child tr:first-child>th:first-child {
+      border-top-left-radius: 4px;
+    }
+	
+	.table-bordered caption+thead tr:first-child th, .table-bordered caption+tbody tr:first-child th, .table-bordered caption+tbody tr:first-child td, .table-bordered colgroup+thead tr:first-child th, .table-bordered colgroup+tbody tr:first-child th, .table-bordered colgroup+tbody tr:first-child td, .table-bordered thead:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child td {
+      border-top: 0;
+	  border-bottom: 0;
+    }
+	
+	.table caption+thead tr:first-child th, .table caption+thead tr:first-child td, .table colgroup+thead tr:first-child th, .table colgroup+thead tr:first-child td, .table thead:first-child tr:first-child th, .table thead:first-child tr:first-child td {
+      border-top: 0;
+	  border-bottom: 0;
+    }
+	
+	.table-bordered th, .table-bordered td {
+      border-left: 1px solid #ddd;
+	  border-right: 0;
+	  border-bottom: 0;
+    }
+	
+	.table th, .table td {
+      padding: 8px;
+      line-height: 20px;
+      text-align: left;
+      vertical-align: top;
+      border-top: 1px solid #ddd;
+    }
+	
+	td>div {
+	  padding-left: 0px;
+	}
+	td>div>div>a, td>div>div>span>a {
+	  color: #6A6A6A;
+	}
+	td>div>div>a:hover, td>div>div>span>a:hover {
+	  color: #202020;
+	}
+	
+	.nav-link {
+	  display: inline;
+	  padding: 0px;
+	}
+	
+	.table-striped tbody>tr:hover {
+	  background-color: #E3E3E3;
+	}
+	
+	.table-striped tbody>tr:nth-child(odd)>td, .table-striped tbody>tr:nth-child(odd)>th {
+      background-color: #f6f6f6;
+    }
+	
+	.table-striped>tbody>tr:hover>* {
+      background-color: #ECECEC !important;
+    }
+	
+	.modal-content {
+	  width: 532px;
+	  height: 532px;
+	  background-color: #E0E0E0;
+	}
+	
+	.modal-body {
+	  width: 500px;
+	  height: 500px;
+	}
+	img {
+	  width: 500px;
+	  height: 500px;
+	}
+	
+	body {
+	  width: 1340px; !important
+	  min-width: 100%;
+	}
+	html {
+	  width: 1340px;
+	  min-width: 100%;
+	}
+	#mainbody {
+	  margin-left: 100px;
+	  margin-right: 100px;
+	  padding-left: 15px;
+	  padding-right: 15px;
+	  width: 1140px; !important
+	  min-width: 100%;
+	}
+	.container>.row {
+	  width: 1140px;
+	  xxmin-width: 100%;
+	}
+	td>.row {
+	  width: 108px;
+	  xxdisplay: block;
+	  xxmin-width: 100%;
+	}
+	td>.row>.col-xs-2 {
+	  padding-left: 15px;
+	  padding-right: 15px;
+	  width: 0px;
+	}
+	
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-light">
+  <a class="navbar-brand" href="../archive_sr.htm">Anter11 > Serbian Archive</a>
+  <div class="nav-collapse justify-content-end">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="http://www.youtube.com/@anter11">
+		  <i class="fa fa-play"></i>
+		  Youtube
+		</a>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="">
+          <i class="fa fa-cubes"></i>
+          Archive
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="../archive_sr.htm">
+              Serbian
+            </a>
+          </li>
+		  <li>
+            <a href="">
+              Croatian [WIP]
+            </a>
+          </li>
+		  <div class="dropdown-divider"></div>
+		  <li>
+            <a href="../lost_archive.htm" style="color: #8B0000">
+              Lost songs
+            </a>
+          </li>
+		</ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.htm">
+		  <i class="fa fa-dollar-sign"></i>
+		  Donate
+		</a>
+      </li>
+	  <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          <i class="fa fa-globe"></i>
+          Language
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="https://web.archive.org/web/20160207075718/https://oc.tc/leaderboard">
+              <i class="flag-icon flag-icon-ad"></i>
+              English
+            </a>
+          </li>
+          <li>
+            <a href="/web/20160207075718/http://oc.tc/channels">
+              <i class="flag flag-sr"></i>
+              Serbian 
+            </a>
+          </li>
+		</ul>
+		<li>
+          <a href="../contact.htm">
+            <i class="fa fa-list-ol"></i>
+            About Me
+          </a>
+        </li>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container" id="mainbody">
+  <div class="page-header">
+    <h1>MIND Produkcija</h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-8">
+	  <h4>MIND Produkcija</h4>
+	  <table class="table table-bordered table-striped">
+	    <thead>
+		  <th width="8%">#</th>
+		  <th width="40%">Album</th>
+		  <th width="39%">Singer</th>
+		  <th>Links</th>
+		</thead>
+		<tbody>
+		  <tr>
+		    <td><strong>001</strong></td>
+			<td>Za Savez Država Srpskih</td>
+			<td>Neđo Mitrović</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_nedjomitrovic.htm#mak001">
+		            <i class="fa fa-film"></i>
+		          </a>
+			    </div>
+				<div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen [2/10 availiable]" href="https://youtu.be/jKnv8qm4yYY">
+		            <i class="fa fa-compact-disc" style="color: #0000E0"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="#album001">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
+		              <i class="fa fa-image" data-toggle="tooltip"></i>
+		            </a>
+				  </span>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>002</strong></td>
+			<td>Krenimo Braćo Srbi</td>
+			<td>Izvorna Grupa Zlatne Žice</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="mind/sr_izvorna_zlatnezice.htm#mak002">
+		            <i class="fa fa-film"></i>
+		          </a>
+			    </div>
+				<div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen [8/10 availiable]" href="https://youtu.be/MBwqCeJFzcI">
+		            <i class="fa fa-compact-disc" style="color: #0000E0"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="#album002">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
+		              <i class="fa fa-image" data-toggle="tooltip"></i>
+		            </a>
+				  </span>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>003</strong></td>
+			<td>Ne Krivite Srbe</td>
+			<td>Izvorna Grupa Božur</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="mind/sr_izvorna_bozur.htm#mak003">
+		            <i class="fa fa-film"></i>
+		          </a>
+			    </div>
+				<div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/hW6SSgsMd6I">
+		            <i class="fa fa-compact-disc"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="#album003">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
+		              <i class="fa fa-image" data-toggle="tooltip" style="color: #0000E0"></i>
+		            </a>
+				  </span>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>004</strong></td>
+			<td>Bosna će se Delit na Dva Dela</td>
+			<td>Neđo Mitrović</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_nedjomitrovic.htm#mak004">
+		            <i class="fa fa-film"></i>
+		          </a>
+			    </div>
+				<div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/44kiZ7MkNcs">
+		            <i class="fa fa-compact-disc"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="#album004">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
+		              <i class="fa fa-image" data-toggle="tooltip" style="color: #0000E0"></i>
+		            </a>
+				  </span>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>005</strong></td>
+			<td>Republiko Srpska</td>
+			<td>Izvorna Grupa Pravoslavni Zvuci</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="mind/sr_izvorna_pravoslavnizvuci.htm#mak005">
+		            <i class="fa fa-film"></i>
+		          </a>
+			    </div>
+				<div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/playlist?list=PLpwLPl-CdQfs3MVmOjD9qZW7qTq4tV5le">
+		            <i class="fa fa-compact-disc"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="#album005">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
+		              <i class="fa fa-image" data-toggle="tooltip"></i>
+		            </a>
+				  </span>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>006</strong></td>
+			<td>Čitav Svet Protiv Nas</td>
+			<td>Izvorna Grupa Božur</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="mind/sr_izvorna_bozur.htm#mak006">
+		            <i class="fa fa-film"></i>
+		          </a>
+			    </div>
+				<div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/paiKbNLKTjI">
+		            <i class="fa fa-compact-disc"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="#album006">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
+		              <i class="fa fa-image" data-toggle="tooltip"></i>
+		            </a>
+				  </span>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>007</strong></td>
+			<td>Narodna Kola</td>
+			<td>Miško Živanović</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="">
+		            <i class="fa fa-film" style="color: #E00000"></i>
+		          </a>
+			    </div>
+				<div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="">
+		            <i class="fa fa-compact-disc" style="color: #E00000"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="#album007">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
+		              <i class="fa fa-image" data-toggle="tooltip" style="color: #E00000"></i>
+		            </a>
+				  </span>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>008</strong></td>
+			<td>Joj Ako nas Napadnete</td>
+			<td>Neđo Mitrović</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_nedjomitrovic.htm#mak008">
+		            <i class="fa fa-film"></i>
+		          </a>
+			    </div>
+				<div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=zAUuGnXBr1s">
+		            <i class="fa fa-compact-disc"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="#album008">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
+		              <i class="fa fa-image" data-toggle="tooltip"></i>
+		            </a>
+				  </span>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong><i style="color: #6A6A6A">009</i></strong></td>
+			<td>Koktel Srpskih Ratničkih Pesama</td>
+			<td></td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="">
+		            <i class="fa fa-film" style="color: #E05400"></i>
+		          </a>
+			    </div>
+				<div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="">
+		            <i class="fa fa-compact-disc" style="color: #E05400"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="#album009a">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
+		              <i class="fa fa-image" data-toggle="tooltip" style="color: #E05400"></i>
+		            </a>
+				  </span>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>009</strong></td>
+			<td>Srbin Peva i kada se Gine</td>
+			<td>Izvorna Grupa Dobrine Delije</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="mind/sr_izvorna_dobrinedelije.htm#mak009">
+		            <i class="fa fa-film"></i>
+		          </a>
+			    </div>
+				<div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/playlist?list=PLgDq3M7If0PAqW_PsuB5x8hk45X5MMdXU">
+		            <i class="fa fa-compact-disc"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="#album009">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
+		              <i class="fa fa-image" data-toggle="tooltip"></i>
+		            </a>
+				  </span>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>010</strong></td>
+			<td>Ljubio me Mića iz Teslića</td>
+			<td>Mara i Novo</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="mind/sr_izvorna_marailole.htm#mak010">
+		            <i class="fa fa-film"></i>
+		          </a>
+			    </div>
+				<div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="">
+		            <i class="fa fa-compact-disc"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="#album010">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
+		              <i class="fa fa-image" data-toggle="tooltip"></i>
+		            </a>
+				  </span>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		</tbody>
+	  </table>
+	  <br>
+	  <h4>MIND Šabac</h4>
+	  <table class="table table-bordered table-striped">
+	    <thead>
+		  <th width="8%">#</th>
+		  <th width="40%">Album</th>
+		  <th width="39%">Singer</th>
+		  <th>Links</th>
+		</thead>
+		<tbody>
+		  <tr>
+		    <td><strong>9401</strong></td>
+			<td>Zbog Tebe</td>
+			<td>Milka Todorović</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_milkatodorovic.htm#stk9401">
+		            <i class="fa fa-film"></i>
+		          </a>
+			    </div>
+				<div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=yEBnicyocPI">
+		            <i class="fa fa-compact-disc"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="#album9401">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
+		              <i class="fa fa-image" data-toggle="tooltip"></i>
+		            </a>
+				  </span>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		</tbody>
+	  </table>
+	</div>
+	<div class="col-sm-4">
+	  <div class="sticky-top">
+	    <br>
+		<div class="card">
+	      <div class="container">
+	        <ul class="list-unstyled">
+		      <li><h5>Key:</h5></li>
+	          <li><i class="fa fa-film"></i>&nbsp;View album page</li>
+			  <li><i class="fa fa-compact-disc"></i>&nbsp;Listen to album</li>
+		      <li><i class="fa fa-image"></i>&nbsp;Album picture</li>
+			  <br>
+			  <li><i class="fa fa-square" style="color: #E00000"></i>&nbsp; Known to exist, not found</li>
+			  <li><i class="fa fa-square" style="color: #E05400"></i>&nbsp; Existance unknown</li>
+			  <li><i class="fa fa-square" style="color: #E0E000"></i>&nbsp; Possibly unofficial</li>
+			  <li><i class="fa fa-square" style="color: #00E000"></i>&nbsp; Archived (use&nbsp;<i class="fa fa-square" style="color: #6A6A6A"></i>&nbsp;instead)</li>
+		      <li><i class="fa fa-square" style="color: #0000E0"></i>&nbsp; Partially found</li>
+			  <li><i class="fa fa-square" style="color: #E000E0"></i>&nbsp; <del>I don't know yet</del></li>
+			</ul>
+		  </div>
+		</div>
+		<br>
+	    <div class="card">
+	      <div class="container">
+	        <ul class="list-unstyled" >
+			  <li style="margin-top: 6px;">
+			    <a data-toggle="collapse" data-toggle="collapse" href="#redtekst" role="button" aria-expanded="false" aria-controls="redtekst">
+			      <i class="fa fa-list" style="color: #E00000"></i>&nbsp;<b>2 unavailiable</b>
+				</a>
+			  </li>
+			  <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="redtekst">
+				    <div class="container">
+			          <ul class="list-unstyled">
+			            <li>2-1 Srpski Odren Krasi Grudi</li>
+				        <li>2-2 Branili ste Otadžbinu</li>
+			          </ul>
+					</div>
+                  </div>
+                </div>
+              </div>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+</div>
+
+<div class="modal fade" id="album001" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-contnt">
+      <div class="modal-body">
+<img src="images/MIND/img001.jpg"></img>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="album002" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+<img src="images/MIND/img002.jpg"></img>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="album003" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+<img src="images/MIND/img003.jpg"></img>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="album004" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="width: 379px">
+      <div class="modal-body" style="width: 347px">
+<img src="images/MIND/img004.jpg" style="width: 347px"></img>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="album005" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+<img src="images/MIND/img005.jpg"></img>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="album006" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+<img src="images/MIND/img006.jpg"></img>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="album008" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+<img src="images/MIND/img008.jpg"></img>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="album009" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+<img src="images/MIND/img009.jpg"></img>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="album010" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+<img src="images/MIND/img010.jpg"></img>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <hr>
+  <div class="row">
+    <div class="col-md-2 offset-md-4">
+      <h6 class="text-center">© Anter11 2025</h6>
+	</div>
+	<div class="col-md-2">
+	  <a href="#"> <h6 class="text-right">Anter12</h6> </a>
+	</div>
+  </div>
+</footer>
+
+</body>
+
+</html>

@@ -244,10 +244,6 @@
       background-color: #ECECEC !important;
     }
 	
-	#iconjump {
-	  color: #744321;
-	}
-	
 	.modal-content {
 	  width: 532px;
 	  height: 532px;
@@ -263,9 +259,36 @@
 	  height: 500px;
 	}
 	
-	xx.container {
-	xx  width: 800px; !important
-	xx}
+	body {
+	  width: 1340px; !important
+	  min-width: 100%;
+	}
+	html {
+	  width: 1340px;
+	  min-width: 100%;
+	}
+	#mainbody {
+	  margin-left: 100px;
+	  margin-right: 100px;
+	  padding-left: 15px;
+	  padding-right: 15px;
+	  width: 1140px; !important
+	  min-width: 100%;
+	}
+	.container>.row {
+	  width: 1140px;
+	  xxmin-width: 100%;
+	}
+	td>.row {
+	  width: 108px;
+	  xxdisplay: block;
+	  xxmin-width: 100%;
+	}
+	td>.row>.col-xs-2 {
+	  padding-left: 15px;
+	  padding-right: 15px;
+	  width: 0px;
+	}
 	
     }
   </style>
@@ -345,7 +368,7 @@
   </div>
 </nav>
 
-<div class="container">
+<div class="container" id="mainbody">
   <div class="page-header">
     <h1>Superton</h1>
   </div>
@@ -366,17 +389,17 @@
 			<td>Lepi Mića</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_lepimica.htm#stk9301">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=bRY5A_QZJaY">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9301">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -392,17 +415,17 @@
 			<td>Miro Semberac</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_mirosemberac.htm#stk9302">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=fzkAykUMQ6Q">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9302">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -418,17 +441,17 @@
 			<td>Milka Todorović</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_milkatodorovic.htm#stk9303">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=FHICvIQuNJA">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9303">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -444,17 +467,17 @@
 			<td>Milomir Martić</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_milomirmartic.htm#stk9304">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=l78szEFU2Ac">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9304">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -470,17 +493,17 @@
 			<td>Brano Trifković</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_branotrifkovic.htm#stk9305">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=dUGeLUyWMIQ">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9305">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -496,17 +519,17 @@
 			<td>Zoran Marković - Tamnavac</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_tamnavac.htm#stk9306">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=JW3J7LDdFrk">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9306">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -522,17 +545,17 @@
 			<td>Baja Mali Knindža</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_bajamali.htm#stk9307">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=9muJXQCxOAI">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9307">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -548,17 +571,17 @@
 			<td>Milka Damnjanović</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_milkadamnjanovic.htm#stk9308">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=SGrJW6WfMrM">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9308">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -574,17 +597,17 @@
 			<td>Nina Nikolić</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_ninanikolic.htm#stk9309">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/BOu0n9YDhw0">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9309">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -600,17 +623,17 @@
 			<td>Boban Zemunac</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_bobanzemunac.htm#stk9310">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=LRMBczlafhQ">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9310">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -626,17 +649,17 @@
 			<td>Mišo Maunaga</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_misomaunaga.htm#stk9311">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=DLLEQn0bL-4">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9311">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -652,17 +675,17 @@
 			<td>Boki №1</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_bokino1.htm#stk9312">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="">
 		            <i class="fa fa-compact-disc" style="color: #E00000"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9312">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -678,17 +701,17 @@
 			<td></td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="">
 		            <i class="fa fa-film" style="color: #E05400"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="">
 		            <i class="fa fa-compact-disc" style="color: #E05400"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9313">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip" style="color: #E05400"></i>
@@ -704,17 +727,17 @@
 			<td>Miro Semberac</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_mirosemberac.htm#9314">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=tniit75EhWM">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9314">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -730,17 +753,17 @@
 			<td></td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="">
 		            <i class="fa fa-film" style="color: #E05400"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="">
 		            <i class="fa fa-compact-disc" style="color: #E05400"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9315">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" style="color: #E05400"></i>
@@ -756,17 +779,17 @@
 			<td>Mila Agatonović</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_mileagatonovic.htm#9316">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/cwXswP0z_7o">
 		            <i class="fa fa-compact-disc" style="color: #0000E0"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9316">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -782,17 +805,17 @@
 			<td>Narodni Guslar Radovan Šojić</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_gusle_radovansojic.htm#stk9317">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="">
 		            <i class="fa fa-compact-disc" style="color: #E00000"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9317">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image"></i>
@@ -808,17 +831,17 @@
 			<td></td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="">
 		            <i class="fa fa-film" style="color: #E05400"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="">
 		            <i class="fa fa-compact-disc" style="color: #E05400"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9318">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip" style="color: #E05400"></i>
@@ -834,17 +857,17 @@
 			<td>Esko</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_esko.htm#stk9319">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/krtOQO50mNQ">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9319">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -860,17 +883,17 @@
 			<td>Veso Kuzmanović</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_vesokuzmanovic.htm#9320">
 		            <i class="fa fa-film" style="color: #0000E0"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen [1/8 availiable]" href="https://www.youtube.com/watch?v=E1KrbekmbJA">
 		            <i class="fa fa-compact-disc" style="color: #0000E0"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9320">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip" style="color: #0000E0"></i>
@@ -886,17 +909,17 @@
 			<td>Marinko Pavlović - Maki</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_marinkomaki.htm#stk9321">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=NJMr72rwSZc">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9321">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -912,17 +935,17 @@
 			<td>Baja Mali Knindža</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_bajamali.htm#stk9322">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=_2B5L5J-iNQ">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9322">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -938,17 +961,17 @@
 			<td>Baja Mali Knindža</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_bajamali.htm#stk9323">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=RSd2riO0EAo">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9323">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -976,17 +999,17 @@
 			<td>Milka Todorović</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_milkatodorovic.htm#stk9401">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=yEBnicyocPI">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9401">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -1002,17 +1025,17 @@
 			<td>Ahmet Alimanović - Ćelentano</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_celentano.htm#stk9402">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=b3jZPLWKVCU">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9402">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -1028,17 +1051,17 @@
 			<td>Mišo Gužvić - Guđa</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_misogudja.htm#stk9403">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/Gz8NzG6bYiQ">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9403">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -1054,17 +1077,17 @@
 			<td>Kosta Marić</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_kostamaric.htm#stk9404">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=Pk1CZoFOcA0">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9404">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip" style="color: #0000E0"></i>
@@ -1080,17 +1103,17 @@
 			<td>Zemljak Braniša</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_zemljakbranisa.htm#stk9405">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=utAS3UalBxQ">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9405">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -1106,17 +1129,17 @@
 			<td>Ćiro Tomić</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_cirotomic.htm#9406">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=xlUX3Y4jFcA">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9406">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -1132,17 +1155,17 @@
 			<td>Gojko Malešević</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_gojkomalesevic.htm#stk9407">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=9Z8kTYXSGes">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9407">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -1158,17 +1181,17 @@
 			<td>Braća sa Dinare</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_bajamali.htm#stk9408">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=z7Bdsn1E_JI">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9408">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -1184,17 +1207,17 @@
 			<td>Dragan Šaulić</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_dragansaulic.htm#stk9409">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/1TT7UfU6oM8">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9409">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -1210,17 +1233,17 @@
 			<td>Marko Đuranović</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_markodjuranovic.htm#stk9410">
 		            <i class="fa fa-film" style="color: #0000E0"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen [7/8? availiable]" href="https://youtu.be/5WAbCzC6p2c">
 		            <i class="fa fa-compact-disc" style="color: #0000E0"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9410">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" style="color: #0000E0"></i>
@@ -1236,17 +1259,17 @@
 			<td>Mira Miškić/Mikšić</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_miramiksic.htm#stk9411">
 		            <i class="fa fa-film" style="color: #0000E0"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen [1/8? availiable]" href="https://www.youtube.com/watch?v=QrplVVbWflA">
 		            <i class="fa fa-compact-disc" style="color: #0000E0"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9411">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" style="color: #E00000"></i>
@@ -1262,17 +1285,17 @@
 			<td>Narodni Guslar Radovan Šojić</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_gusle_radovansojic.htm#stk9412">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/hgRt_AoMl1I">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9412">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image"></i>
@@ -1288,17 +1311,17 @@
 			<td>Lune Jokšić</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_lunejoksic.htm#stk9413">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/xUmFBhqa4yY">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9413">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image"></i>
@@ -1314,17 +1337,17 @@
 			<td>Dragoslav Cvijetić - Kačar</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_dragoslavkacar.htm#stk9414">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=IT-eCybNfIU">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9414">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image"></i>
@@ -1340,17 +1363,17 @@
 			<td>Mišo Šarić</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_misosaric.htm#stk9415">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=1PRPVDF4SWU">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9415">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image"></i>
@@ -1366,17 +1389,17 @@
 			<td>Nikola Urošević - Gedža</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_gedza.htm#stk9416">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=bMvqLLoP6aE">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9416">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image"></i>
@@ -1392,17 +1415,17 @@
 			<td></td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="">
 		            <i class="fa fa-film" style="color: #E05400"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="">
 		            <i class="fa fa-compact-disc" style="color: #E05400"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9417">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" style="color: #E05400"></i>
@@ -1418,17 +1441,17 @@
 			<td>[Various]</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_comp_osvetime.htm">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/kacH2K-HCqM">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9418">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image"></i>
@@ -1444,17 +1467,17 @@
 			<td>Srce i Čelik</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_branotrifkovic.htm#stk9419">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=9nt5mZBzyog">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9419">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image"></i>
@@ -1470,17 +1493,17 @@
 			<td></td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="">
 		            <i class="fa fa-film" style="color: #E05400"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="">
 		            <i class="fa fa-compact-disc" style="color: #E05400"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9417">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" style="color: #E05400"></i>
@@ -1496,17 +1519,17 @@
 			<td>Radojka i Cikotske Barabe</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_izvorna_cikotskebarabe.htm#stk9421">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/TPRA-R-vt1A">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9421">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" style="color: #0000E0"></i>
@@ -1522,17 +1545,17 @@
 			<td>Vasvija</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_vasvija.htm#stk9422">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/EubZ2V99bj8">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9422">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image"></i>
@@ -1548,17 +1571,17 @@
 			<td>Narodni Guslar Miroslav Matić</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_gusle_miroslavmatic.htm#stk9423">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/78N1sTWqTPc">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9423">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image"></i>
@@ -1574,17 +1597,17 @@
 			<td>Svetomir Ilić - Siki</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_svetomirilicsiki.htm#stk9424">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/-Ur6tRLP5lQ">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9424">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" style="color: #0000E0"></i>
@@ -1600,17 +1623,17 @@
 			<td></td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="">
 		            <i class="fa fa-film" style="color: #E05400"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="">
 		            <i class="fa fa-compact-disc" style="color: #E05400"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9425">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" style="color: #E05400"></i>
@@ -1626,17 +1649,17 @@
 			<td>Baja Mali Knindža</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_bajamali.htm#stk9426">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=fe_X48S9EDg">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9426">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image"></i>
@@ -1652,17 +1675,17 @@
 			<td>Nikola Klipić</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_nikolaklipic.htm#stk9427">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/AnNCh03uCSg">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9427">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image"></i>
@@ -1678,17 +1701,17 @@
 			<td>Hej Ljubavi</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_djbole.htm#stk9428">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/il0F7k_kAiY">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9428">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image"></i>
@@ -1704,17 +1727,17 @@
 			<td>Izvorna Grupa Teslićki Dijamanti</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_izvorna_teslickidijamanti.htm#stk9429">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=r5Dc4Dgk4Tg">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9429">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image"></i>
@@ -1730,17 +1753,17 @@
 			<td></td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="">
 		            <i class="fa fa-film" style="color: #E05400"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="">
 		            <i class="fa fa-compact-disc" style="color: #E05400"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9430">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" style="color: #E05400"></i>
@@ -1756,17 +1779,17 @@
 			<td></td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="">
 		            <i class="fa fa-film" style="color: #E05400"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="">
 		            <i class="fa fa-compact-disc" style="color: #E05400"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9431">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" style="color: #E05400"></i>
@@ -1782,17 +1805,17 @@
 			<td>Željko Jovanović</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_zeljkojovanovic.htm#stk9432">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/0ulWWC3NwaM">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9432">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image"></i>
@@ -1808,17 +1831,17 @@
 			<td>Nikica Đeković</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_nikicadekovic.htm#stk9433">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=sCIL_JcyIic">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9433">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image"></i>
@@ -1832,7 +1855,7 @@
 	  </table>
 	  <br>
 	  <h4>1995</h4>
-	  	  <table class="table table-bordered table-striped">
+	  <table class="table table-bordered table-striped">
 	    <thead>
 		  <th width="8%">#</th>
 		  <th width="40%">Album</th>
@@ -1846,17 +1869,17 @@
 			<td>Nikica Đeković</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_nikicadekovic.htm#stk9433">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=sCIL_JcyIic">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9433">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image"></i>
@@ -1872,17 +1895,17 @@
 			<td>Mišo Maunaga</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_misomaunaga.htm#stk9502">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/KRtvcMTVd2c">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9502">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -1898,17 +1921,17 @@
 			<td>Negro</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_negro.htm#stk9503">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/KRu3coyaoqs">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9503">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -1924,17 +1947,17 @@
 			<td>Višnja Janjoš</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_visnja.htm#stk9504">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen [1/8 availiable]" href="https://www.youtube.com/watch?v=jEiyR2Ns5nI">
 		            <i class="fa fa-compact-disc" style="color: #0000E0"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9504">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -1950,17 +1973,17 @@
 			<td>Goran Bučevac</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_goranbucevac.htm#stk9505">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/tYX3zJlNZOc">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9505">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -1976,17 +1999,17 @@
 			<td>Narodni Guslar Mijat Kuč</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_gusle_mijatkuc.htm#stk9506">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/EqiNcMCFUrc">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9506">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -2002,17 +2025,17 @@
 			<td>Mile Brkić</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_milebrkic.htm#stk9507">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/kYaupeV2508">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9507">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -2028,17 +2051,17 @@
 			<td></td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="">
 		            <i class="fa fa-film" style="color: #E05400"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="">
 		            <i class="fa fa-compact-disc" style="color: #E05400"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9508">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip" style="color: #E05400"></i>
@@ -2054,17 +2077,17 @@
 			<td>Milka Todorović</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_milkatodorovic.htm#stk9509">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=Hy4OtLWAPHs">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9509">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -2080,17 +2103,17 @@
 			<td>Baja Mali Knindža</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_bajamali.htm#stk9510">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=meQeGCdCXN4">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9510">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -2106,17 +2129,17 @@
 			<td>Braća sa Dinare</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_bajamali.htm#stk9511">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=COJziskBVKE">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9511">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -2132,17 +2155,17 @@
 			<td></td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="">
 		            <i class="fa fa-film" style="color: #E05400"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="">
 		            <i class="fa fa-compact-disc" style="color: #E05400"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9508">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip" style="color: #E05400"></i>
@@ -2158,17 +2181,17 @@
 			<td>Narodni Gulsar Đorđije Koprivica</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_gusle_djordjijekoprivica.htm#stk9513">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/N78cK5IlEgk">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9513">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -2184,17 +2207,17 @@
 			<td>Gordan Krajišnik</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_gordankrajisnik.htm#stk9514">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=Go8CuAPr-ow">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9514">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip" style="color: #0000E0"></i>
@@ -2210,17 +2233,17 @@
 			<td>Lune</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_lunejoksic.htm#stk9515">
 		            <i class="fa fa-film" style="color: #E0E000"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="">
 		            <i class="fa fa-compact-disc" style="color: #E00000"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9515">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip" style="color: #E00000"></i>
@@ -2236,17 +2259,17 @@
 			<td>Narodni Guslar Mila Kotlaja</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_gusle_milakotlaja.htm#stk9516">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9516">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -2262,17 +2285,17 @@
 			<td>Nedeljko Vinčić - Vinča</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="">
 		            <i class="fa fa-film" style="color: #E00000"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="">
 		            <i class="fa fa-compact-disc" style="color: #E00000"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9517">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip" style="color: #E00000"></i>
@@ -2288,17 +2311,17 @@
 			<td>Vasvija</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_vasvija.htm#stk9518">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/6zMgyWqMA8s">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9518">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip" style="color: #0000E0"></i>
@@ -2314,17 +2337,17 @@
 			<td>Nina</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_nina.htm#stk9519">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen [5/8 availiable]" href="https://youtu.be/hJ0thsir5QY">
 		            <i class="fa fa-compact-disc" style="color: #0000E0"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9519">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -2340,17 +2363,17 @@
 			<td>Baja Mali Knindža</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_bajamali.htm#stk9520">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=4eMSZMl91V8">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9520">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -2366,17 +2389,17 @@
 			<td>Baja i Đole</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_bajamali.htm#stk9521">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=PA3ZsH7eipI">
 		            <i class="fa fa-compact-disc"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9521">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -2392,17 +2415,17 @@
 			<td>[Various]</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_comp_sumadijskisabor.htm#stk9522">
 		            <i class="fa fa-film"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="">
 		            <i class="fa fa-compact-disc" style="color: #E00000"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9522">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip"></i>
@@ -2418,20 +2441,176 @@
 			<td>[Various]</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_comp_sumadijskisabor.htm#stk9523">
 		            <i class="fa fa-film" style="color: #0000E0"></i>
 		          </a>
 			    </div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=PA3ZsH7eipI">
 		            <i class="fa fa-compact-disc" style="color: #E00000"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#album9523">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
 		              <i class="fa fa-image" data-toggle="tooltip" style="color: #E00000"></i>
+		            </a>
+				  </span>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>9524</strong></td>
+			<td>Boem</td>
+			<td>Slaviša Mitrović</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_slavisamitrovic.htm#stk9524">
+		            <i class="fa fa-film"></i>
+		          </a>
+			    </div>
+				<div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/_IIESKto1Zw">
+		            <i class="fa fa-compact-disc"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="#album9524">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
+		              <i class="fa fa-image" data-toggle="tooltip"></i>
+		            </a>
+				  </span>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>9525</strong></td>
+			<td>Zbogom Draga</td>
+			<td>DJ Bole</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_djbole.htm#stk9525">
+		            <i class="fa fa-film"></i>
+		          </a>
+			    </div>
+				<div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/I1bPLNEn4rM">
+		            <i class="fa fa-compact-disc"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="#album9525">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
+		              <i class="fa fa-image" data-toggle="tooltip"></i>
+		            </a>
+				  </span>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>9526</strong></td>
+			<td>Žena Plave Kose</td>
+			<td>Vojo Terzić</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_vojoterzic.htm#stk9526">
+		            <i class="fa fa-film" style="color: #0000E0"></i>
+		          </a>
+			    </div>
+				<div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen [4/? availiable]" href="https://youtu.be/qNBfqkoTHM0">
+		            <i class="fa fa-compact-disc" style="color: #0000E0"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="#album9526">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
+		              <i class="fa fa-image" data-toggle="tooltip" style="color: #0000E0"></i>
+		            </a>
+				  </span>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>9527</strong></td>
+			<td>Zbogom Oružje</td>
+			<td>Baja Mali Knindža</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="../sr_bajamali.htm#stk9527">
+		            <i class="fa fa-film"></i>
+		          </a>
+			    </div>
+				<div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=fJf4r4-5ETc">
+		            <i class="fa fa-compact-disc"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="#album9527">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
+		              <i class="fa fa-image" data-toggle="tooltip"></i>
+		            </a>
+				  </span>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>9528</strong></td>
+			<td>Šinobus Kolo</td>
+			<td>Željko Jovanović</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_zeljkojovanovic.htm#stk9528">
+		            <i class="fa fa-film"></i>
+		          </a>
+			    </div>
+				<div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://youtu.be/tY5oQXKZKSc">
+		            <i class="fa fa-compact-disc"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="#album9528">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
+		              <i class="fa fa-image" data-toggle="tooltip"></i>
+		            </a>
+				  </span>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>9529</strong></td>
+			<td>Ko je Krivac</td>
+			<td>Dragan Šaulić</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="View Album" target="_blank" href="superton/sr_dragansaulic.htm#stk9529">
+		            <i class="fa fa-film"></i>
+		          </a>
+			    </div>
+				<div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Listen" href="https://www.youtube.com/watch?v=s18IBiYC1dE">
+		            <i class="fa fa-compact-disc"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="#album9529">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Image">
+		              <i class="fa fa-image" data-toggle="tooltip"></i>
 		            </a>
 				  </span>
 			    </div>
@@ -2464,24 +2643,7 @@
 		<br>
 	    <div class="card">
 	      <div class="container">
-	        <ul class="list-unstyled" >
-			  <li style="margin-top: 6px;">
-			    <a data-toggle="collapse" data-toggle="collapse" href="#redtekst" role="button" aria-expanded="false" aria-controls="redtekst">
-			      <i class="fa fa-list" style="color: #E00000"></i>&nbsp;<b>2 unavailiable</b>
-				</a>
-			  </li>
-			  <div class="row">
-                <div class="col">
-                  <div class="collapse multi-collapse" id="redtekst">
-				    <div class="container">
-			          <ul class="list-unstyled">
-			            <li>2-1 Srpski Odren Krasi Grudi</li>
-				        <li>2-2 Branili ste Otadžbinu</li>
-			          </ul>
-					</div>
-                  </div>
-                </div>
-              </div>
+	        <ul class="list-unstyled">
 			</ul>
 		  </div>
 		</div>
@@ -2914,6 +3076,7 @@
     </div>
   </div>
 </div>
+
 <div class="modal fade" id="album9502" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -3063,6 +3226,60 @@
     <div class="modal-content">
       <div class="modal-body">
 <img src="images/img9522.jpg"></img>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="album9524" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+<img src="images/img9524.jpg"></img>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="album9525" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+<img src="images/img9525.jpg"></img>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="album9526" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="width: 379px">
+      <div class="modal-body" style="width: 347px">
+<img src="images/img9526.jpg" style="width: 347px"></img>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="album9527" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+<img src="images/img9527.jpg"></img>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="album9528" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+<img src="images/img9528.jpg"></img>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="album9529" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+<img src="images/img9529.jpg"></img>
       </div>
     </div>
   </div>

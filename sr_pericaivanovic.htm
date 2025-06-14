@@ -15,11 +15,6 @@
     });
 </script>
   <style>
-    p {
-      color: red;
-      text-align: left;
-    }
-	
 	.navbar {
 	  background-image: linear-gradient(#FAFAFA, #E9E9E9);
 	  padding-top: 0px; 
@@ -240,8 +235,35 @@
       background-color: #ECECEC !important;
     }
 	
-	#iconjump {
-	  color: #744321;
+	body {
+	  width: 1340px; !important
+	  min-width: 100%;
+	}
+	html {
+	  width: 1340px;
+	  min-width: 100%;
+	}
+	#mainbody {
+	  margin-left: 100px;
+	  margin-right: 100px;
+	  padding-left: 15px;
+	  padding-right: 15px;
+	  width: 1140px; !important
+	  min-width: 100%;
+	}
+	.container>.row {
+	  width: 1140px;
+	  xxmin-width: 100%;
+	}
+	td>.row {
+	  width: 130px;
+	  xxdisplay: block;
+	  min-width: 100%;
+	}
+	td>.row>.col-xs-2 {
+	  padding-left: 15px;
+	  padding-right: 15px;
+	  width: 0px;
 	}
 	
     }
@@ -322,7 +344,7 @@
   </div>
 </nav>
 
-<div class="container">
+<div class="container" id="mainbody">
   <div class="page-header">
     <h1>Perica Ivanović</h1>
   </div>
@@ -334,7 +356,7 @@
 		  <th width="5%">#</th>
 		  <th width="10%">Time</th>
 		  <th>Song</th>
-		  <th width="20%">Links</th>
+		  <th width="18%">Links</th>
 		</thead>
 		<tbody>
 		  <tr>
@@ -343,19 +365,19 @@
 			<td>Srpska Granata "Srpsku Granatu Božja Ruka Vodi"</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Audio HQ" target="_blank" href="https://drive.google.com/file/d/1v2C2W2aYplxovQol-b21rM9_ndcvC-49/view?usp=drive_link">
 		            <i class="fa fa-music"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#music">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Text">
 		              <i class="fa fa-list" data-toggle="tooltip"></i>
 		            </a>
 				  </span>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Download .mp3" href="https://drive.google.com/u/5/uc?id=1v2C2W2aYplxovQol-b21rM9_ndcvC-49&export=download">
 		            <i class="fa fa-download"></i>
 		          </a>
@@ -369,19 +391,19 @@
 			<td>Brate Srbine</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Audio HQ" target="_blank" href="https://drive.google.com/file/d/1vMLOd0k4v0Bh4OzuKBUSlG6zdik-8IC2/view?usp=drive_link">
 		            <i class="fa fa-music"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#music">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Text">
 		              <i class="fa fa-list" data-toggle="tooltip"></i>
 		            </a>
 				  </span>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Download .mp3" href="https://drive.google.com/u/5/uc?id=1vMLOd0k4v0Bh4OzuKBUSlG6zdik-8IC2&export=download">
 		            <i class="fa fa-download"></i>
 		          </a>
@@ -395,19 +417,19 @@
 			<td>Živ je Veljko</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Audio HQ" target="_blank" href="https://drive.google.com/file/d/1nmyIyjxCCv1mazgdQWMD7T_ox_HWGOdI/view?usp=drive_link">
 		            <i class="fa fa-music"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#music">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Text">
 		              <i class="fa fa-list" data-toggle="tooltip"></i>
 		            </a>
 				  </span>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Download .mp3" href="https://drive.google.com/u/5/uc?id=1nmyIyjxCCv1mazgdQWMD7T_ox_HWGOdI&export=download">
 		            <i class="fa fa-download"></i>
 		          </a>
@@ -421,19 +443,19 @@
 			<td>Pogin'o si Sine</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Audio HQ" target="_blank" href="https://drive.google.com/file/d/1CeOCiD2PhQ76d_iGZMlWsNA4sJrPy55G/view?usp=drive_link">
 		            <i class="fa fa-music"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#music">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Text">
 		              <i class="fa fa-list" data-toggle="tooltip"></i>
 		            </a>
 				  </span>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Download .mp3" href="https://drive.google.com/u/5/uc?id=1CeOCiD2PhQ76d_iGZMlWsNA4sJrPy55G&export=download">
 		            <i class="fa fa-download"></i>
 		          </a>
@@ -447,19 +469,19 @@
 			<td>Zaboravit Nećemo</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Audio HQ" target="_blank" href="https://drive.google.com/file/d/1g8aeFcgZUP7cy5EqpUrN1BhrYVDhaYte/view?usp=drive_link">
 		            <i class="fa fa-music"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#music">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Text">
 		              <i class="fa fa-list" data-toggle="tooltip"></i>
 		            </a>
 				  </span>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Download .mp3" href="https://drive.google.com/u/5/uc?id=1g8aeFcgZUP7cy5EqpUrN1BhrYVDhaYte&export=download">
 		            <i class="fa fa-download"></i>
 		          </a>
@@ -473,19 +495,19 @@
 			<td>Ne bih Dao Banja Luku</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Audio HQ" target="_blank" href="https://drive.google.com/file/d/1L9sVO7mGqkwzOhM8oCNuY9uVrJwCetHG/view?usp=drive_link">
 		            <i class="fa fa-music"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#music">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Text">
 		              <i class="fa fa-list" data-toggle="tooltip"></i>
 		            </a>
 				  </span>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Download .mp3" href="https://drive.google.com/u/5/uc?id=1L9sVO7mGqkwzOhM8oCNuY9uVrJwCetHG&export=download">
 		            <i class="fa fa-download"></i>
 		          </a>
@@ -499,19 +521,19 @@
 			<td>Teške Borbe</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Audio HQ" target="_blank" href="https://drive.google.com/file/d/1RQ7JQ_Vldx2ESa1poogBiCoVEY9ZPYfQ/view?usp=drive_link">
 		            <i class="fa fa-music"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#music">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Text">
 		              <i class="fa fa-list" data-toggle="tooltip"></i>
 		            </a>
 				  </span>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Download .mp3" href="https://drive.google.com/u/5/uc?id=1RQ7JQ_Vldx2ESa1poogBiCoVEY9ZPYfQ&export=download">
 		            <i class="fa fa-download"></i>
 		          </a>
@@ -525,19 +547,19 @@
 			<td>Srbačka Brigada</td>
 			<td>
 			  <div class="row">
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Audio HQ" target="_blank" href="https://drive.google.com/file/d/1rD5JJpyApzxG66H-FE_D8ICRxwXFdMLw/view?usp=drive_link">
 		            <i class="fa fa-music"></i>
 		          </a>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 				  <span data-toggle="modal" data-target="#music">
 			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Text">
 		              <i class="fa fa-list" data-toggle="tooltip"></i>
 		            </a>
 				  </span>
 			    </div>
-			    <div class="col-sm-2">
+			    <div class="col-xs-2">
 			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Download .mp3" href="https://drive.google.com/u/5/uc?id=1rD5JJpyApzxG66H-FE_D8ICRxwXFdMLw&export=download">
 		            <i class="fa fa-download"></i>
 		          </a>

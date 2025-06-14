@@ -10,11 +10,6 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <style>
-    p {
-      color: red;
-      text-align: left;
-    } 
-	
 	.navbar {
 	  background-image: linear-gradient(#FAFAFA, #E9E9E9);
 	  padding-top: 0px; 
@@ -227,6 +222,52 @@
       text-rendering: optimizelegibility;
     }
 	
+	body {
+	  width: 1340px; !important
+	  min-width: 100%;
+	}
+	html {
+	  width: 1340px;
+	  min-width: 100%;
+	}
+	#mainbody {
+	  margin-left: 100px;
+	  margin-right: 100px;
+	  padding-left: 15px;
+	  padding-right: 15px;
+	  width: 1140px; !important
+	  min-width: 100%;
+	}
+	#mainbody>.row {
+	  width: 1140px;
+	}
+	td>.row {
+	  width: 108px;
+	  xxdisplay: block;
+	  xxmin-width: 100%;
+	}
+	td>.row>.col-xs-2 {
+	  padding-left: 15px;
+	  padding-right: 15px;
+	  width: 0px;
+	}
+	.col-xs-7 {
+	  width: 665px;
+	  padding-left: 15px;
+	  padding-right: 15px;
+	}
+	.col-xs-4.offset-xs-1 {
+	  width: 380px;
+	  padding-left: 15px;
+	  padding-right: 15px;
+	  margin-left: 95px;
+	}
+	.col-xs-6 {
+	  width: 175px;
+	  padding-left: 15px;
+	  padding-right: 15px;
+	}
+	
     }
   </style>
 </head>
@@ -319,9 +360,9 @@
 </div>
 </br>
 
-<div class="container">
+<div class="container" id="mainbody">
   <div class="row">
-    <div class="col-sm-7">
+    <div class="col-xs-7">
 	  <h4>Singers</h4>
 	  </br>
 	  <ul class="list-group">
@@ -390,14 +431,14 @@
 	    <a href="sr_other/svismomi.htm" class="list-group-item list-group-item-action">Svi Smo Mi</a>
 	  </ul>
 	</div>
-	<div class="col-sm-4 offset-sm-1">
+	<div class="col-xs-4 offset-xs-1">
 	  <div class="sticky-top">
 	    </br>
-	    <div class="card">
+	    <div class="card" style="width: 350px;">
 	      <h4 class="text-center">Serbian Archive</h4>
 	    </div>
 	    </br>
-		<div class="card">
+		<div class="card" style="width: 350px;">
 	      <div class="container">
 	        <ul class="list-unstyled">
 		      <li>Archive rules:</li> </br>
@@ -411,13 +452,13 @@
 		</div>
 		</br>
 	    <div class="container">
-		  <div class="row">
-		    <div class="col-sm-6">
+		  <div class="row" style="width: 350px; margin-left: -15px; margin-right: -15px;">
+		    <div class="col-xs-6">
 		      <div class="card">
 		        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Patch_of_the_Army_of_Republika_Srpska.svg/1200px-Patch_of_the_Army_of_Republika_Srpska.svg.png" class="img-fluid">
 		      </div>
 			</div>
-			<div class="col-sm-6">
+			<div class="col-xs-6">
 			  <div class="card">
 		        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Arms_of_Serbia.svg/220px-Arms_of_Serbia.svg.png" class="img-fluid">
 		      </div>
