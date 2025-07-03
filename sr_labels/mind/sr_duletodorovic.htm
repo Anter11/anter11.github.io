@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dule Todorović</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+    });
+  </script>
+  <style>
+	.navbar {
+	  background-image: linear-gradient(#FAFAFA, #E9E9E9);
+	  padding-top: 0px; 
+	  padding-bottom: 0px; 
+	}
+	
+	ul.dropdown-menu {
+	  padding-top: 5px;
+      padding-right: 0px;
+      padding-bottom: 5px;
+      padding-left: 0px;
+	  box-shadow: 0 0px 14px rgba(0, 0, 0, 0.2);
+	  font-size: 16px;
+	  width: 175px;
+	  border-top-width: 2px;
+      border-right-width: 2px;
+      border-bottom-width: 2px;
+      border-left-width: 2px;
+      border-top-style: solid;
+      border-right-style: solid;
+      border-bottom-style: solid;
+      border-left-style: solid;
+	  border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+      border-bottom-left-radius: 6px;
+	}
+	
+	.dropdown-menu>li {
+	  line-height: 20px;
+	  padding-top: 2px;
+      padding-right: 20px;
+      padding-bottom: 2px;
+      padding-left: 20px;
+	}
+	
+	.dropdown-menu>li>a {
+	  font-size: 14px;
+	  line-height: 20px;
+	  height: 20px;
+	}
+	
+	.navbar .nav>li>.dropdown-menu:before {
+	  position: absolute;
+      top: -7px;
+      left: 9px;
+      display: inline-block;
+      border-right-width: 7px;
+	  border-right-style: solid;
+	  border-right-color: transparent;
+	  border-bottom-width: 7px;
+      border-bottom-style: solid;
+      border-bottom-color: #CCC;
+      border-left-width: 7px;
+      border-left-style: solid;
+      border-left-color: transparent;
+      border-bottom-color: rgba(0, 0, 0, 0.2);
+      content: '';
+	}
+	
+	.navbar .nav>li>.dropdown-menu:after {
+	  position: absolute;
+      top: -6px;
+      left: 10px;
+      display: inline-block;
+	  border-right-width: 6px;
+      border-right-style: solid;
+      border-right-color: transparent;
+	  border-bottom-width: 6px;
+      border-bottom-style: solid;
+      border-bottom-color: rgb(255, 255, 255);
+	  border-left-width: 6px;
+      border-left-style: solid;
+      border-left-color: transparent;
+	  content: '';
+	}
+	
+	.navbar .nav>li {
+	  padding-top: 4px;
+	  padding-bottom: 4px;
+	}
+	
+	.navbar .nav>li>a {
+      float: right;
+      padding: 10px 15px 10px;
+      color: #6A6A6A;
+      text-decoration: none;
+      text-shadow: 0 1px 0 #fff;
+    }
+    .navbar .nav>li>a:hover {
+      color: #202020;
+      text-decoration: none;
+      background-color: transparent;
+    }
+	
+	.dropdown-menu>li>a {
+	  color: #404040;
+	}
+	.dropdown-menu>li>a:hover {
+	  text-decoration: none;
+	}
+	
+	.dropdown-menu>li>a>div:hover {
+	  background-color: #E5E5E5 !important;
+	}
+	
+	.brand {
+      font-size: 20px;
+	  color: #303030;
+	}
+	
+	li {
+      line-height: 20px;
+    }
+	.nav {
+	  float: right;
+	}
+	.nav-collapse ul.nav li:hover {
+      background-color: #E3E3E3;
+    }
+	
+	body, body>.container>.row>.col-sm-4>.sticky-top>.card>.container>ul>li>a {
+      margin: 0;
+      font-family: "Lato", "Helvetica Neue", Helvetica,Arial,sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      color: #303030;
+	  background-color: #FFFFFF;
+    }
+	
+	h1, h2, h3, h4, h5 {
+      margin: 10px 0;
+      font-family: inherit;
+      font-weight: bold;
+      line-height: 20px;
+      color: inherit;
+      text-rendering: optimizelegibility;
+    }
+	
+	h1, h2, h3 {
+      line-height: 40px;
+    }
+	
+	h1 {
+	  font-size: 38.5px;
+	}
+	
+	.page-header {
+      padding-bottom: 15px;
+      margin: 25px 0 25px;
+      border-bottom: 1px solid #eee;
+    }
+	
+	table {
+	  background-color: transparent;
+	  border-spacing: 0;
+	}
+	
+	.table-bordered {
+	  border: 1px solid #ddd;
+	  border-radius: 4px;
+	  border-left: 0;
+	  border-collapse: separate;
+	}
+	
+	.table-bordered thead:first-child tr:first-child>th:first-child, .table-bordered tbody:first-child tr:first-child>td:first-child, .table-bordered tbody:first-child tr:first-child>th:first-child {
+      border-top-left-radius: 4px;
+    }
+	
+	.table-bordered caption+thead tr:first-child th, .table-bordered caption+tbody tr:first-child th, .table-bordered caption+tbody tr:first-child td, .table-bordered colgroup+thead tr:first-child th, .table-bordered colgroup+tbody tr:first-child th, .table-bordered colgroup+tbody tr:first-child td, .table-bordered thead:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child td {
+      border-top: 0;
+	  border-bottom: 0;
+    }
+	
+	.table caption+thead tr:first-child th, .table caption+thead tr:first-child td, .table colgroup+thead tr:first-child th, .table colgroup+thead tr:first-child td, .table thead:first-child tr:first-child th, .table thead:first-child tr:first-child td {
+      border-top: 0;
+	  border-bottom: 0;
+    }
+	
+	.table-bordered th, .table-bordered td {
+      border-left: 1px solid #ddd;
+	  border-right: 0;
+	  border-bottom: 0;
+    }
+	
+	.table th, .table td {
+      padding: 8px;
+      line-height: 20px;
+      text-align: left;
+      vertical-align: top;
+      border-top: 1px solid #ddd;
+    }
+	
+	td>div {
+	  padding-left: 0px;
+	}
+	td>div>div>a, td>div>div>span>a {
+	  color: #6A6A6A;
+	}
+	td>div>div>a:hover, td>div>div>span>a:hover {
+	  color: #202020;
+	}
+	
+	.nav-link {
+	  display: inline;
+	  padding: 0px;
+	}
+	
+	.table-striped tbody>tr:hover {
+	  background-color: #E3E3E3;
+	}
+	
+	.table-striped tbody>tr:nth-child(odd)>td, .table-striped tbody>tr:nth-child(odd)>th {
+      background-color: #f6f6f6;
+    }
+	
+	.table-striped>tbody>tr:hover>* {
+      background-color: #ECECEC !important;
+    }
+	
+	body {
+	  width: 1340px; !important
+	  min-width: 100%;
+	}
+	html {
+	  width: 1340px;
+	  min-width: 100%;
+	}
+	#mainbody {
+	  margin-left: 100px;
+	  margin-right: 100px;
+	  padding-left: 15px;
+	  padding-right: 15px;
+	  width: 1140px; !important
+	  min-width: 100%;
+	}
+	.container>.row {
+	  width: 1140px;
+	  xxmin-width: 100%;
+	}
+	td>.row {
+	  width: 130px;
+	  xxdisplay: block;
+	  min-width: 100%;
+	}
+	td>.row>.col-xs-2 {
+	  padding-left: 15px;
+	  padding-right: 15px;
+	  width: 0px;
+	}
+	
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-light">
+  <a class="navbar-brand" href="../mind.htm">Anter11 > Serbian Archive > MIND Produkcija</a>
+  <div class="nav-collapse justify-content-end">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="http://www.youtube.com/@anter11">
+		  <i class="fa fa-play"></i>
+		  Youtube
+		</a>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="">
+          <i class="fa fa-cubes"></i>
+          Archive
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="../../archive_sr.htm">
+              Serbian
+            </a>
+          </li>
+		  <li>
+            <a href="">
+              Croatian [WIP]
+            </a>
+          </li>
+		  <div class="dropdown-divider"></div>
+		  <li>
+            <a href="../../lost_archive.htm" style="color: #8B0000">
+              Lost songs
+            </a>
+          </li>
+		</ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.htm">
+		  <i class="fa fa-dollar-sign"></i>
+		  Donate
+		</a>
+      </li>
+	  <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          <i class="fa fa-globe"></i>
+          Language
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="https://web.archive.org/web/20160207075718/https://oc.tc/leaderboard">
+              <i class="flag-icon flag-icon-ad"></i>
+              English
+            </a>
+          </li>
+          <li>
+            <a href="/web/20160207075718/http://oc.tc/channels">
+              <i class="flag flag-sr"></i>
+              Serbian 
+            </a>
+          </li>
+		</ul>
+		<li>
+          <a href="../../contact.htm">
+            <i class="fa fa-list-ol"></i>
+            About Me
+          </a>
+        </li>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container" id="mainbody">
+  <div class="page-header">
+    <h1>Dule Todorović</h1>
+  </div>
+  <div class="row" id="mak?">
+    <div class="col-sm-8">
+	  <h4>1. Gitara<span class="float-right"><a href="" style="color: #E00000">1994</a></span></h4>
+	  <table class="table table-bordered table-striped">
+	    <thead>
+		  <th width="5%">#</th>
+		  <th width="10%">Time</th>
+		  <th>Song</th>
+		  <th width="18%">Links</th>
+		</thead>
+		<tbody>
+		  <tr>
+		    <td><strong>1</strong></td>
+			<td></td>
+			<td>Gitara</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Audio HQ" target="_blank" href="">
+		            <i class="fa fa-music" style="color: #E00000"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Text">
+		              <i class="fa fa-list" data-toggle="tooltip" style="color: #E00000"></i>
+		            </a>
+				  </span>
+			    </div>
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Download .mp3" href="">
+		            <i class="fa fa-download" style="color: #E00000"></i>
+		          </a>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>2</strong></td>
+			<td></td>
+			<td>Grešio Sam</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Audio HQ" target="_blank" href="">
+		            <i class="fa fa-music" style="color: #E00000"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Text">
+		              <i class="fa fa-list" data-toggle="tooltip" style="color: #E00000"></i>
+		            </a>
+				  </span>
+			    </div>
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Download .mp3" href="">
+		            <i class="fa fa-download" style="color: #E00000"></i>
+		          </a>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>3</strong></td>
+			<td></td>
+			<td>Pokidaću Sve Okove</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Audio HQ" target="_blank" href="">
+		            <i class="fa fa-music" style="color: #E00000"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Text">
+		              <i class="fa fa-list" data-toggle="tooltip" style="color: #E00000"></i>
+		            </a>
+				  </span>
+			    </div>
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Download .mp3" href="">
+		            <i class="fa fa-download" style="color: #E00000"></i>
+		          </a>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>4</strong></td>
+			<td></td>
+			<td>Oprosti mi Majko</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Audio HQ" target="_blank" href="">
+		            <i class="fa fa-music" style="color: #E00000"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Text">
+		              <i class="fa fa-list" data-toggle="tooltip" style="color: #E00000"></i>
+		            </a>
+				  </span>
+			    </div>
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Download .mp3" href="">
+		            <i class="fa fa-download" style="color: #E00000"></i>
+		          </a>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>5</strong></td>
+			<td></td>
+			<td>Mangala</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Audio HQ" target="_blank" href="">
+		            <i class="fa fa-music" style="color: #E00000"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Text">
+		              <i class="fa fa-list" data-toggle="tooltip" style="color: #E00000"></i>
+		            </a>
+				  </span>
+			    </div>
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Download .mp3" href="">
+		            <i class="fa fa-download" style="color: #E00000"></i>
+		          </a>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>6</strong></td>
+			<td></td>
+			<td>Ne Mogu nam Ništa</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Audio HQ" target="_blank" href="">
+		            <i class="fa fa-music" style="color: #E00000"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Text">
+		              <i class="fa fa-list" data-toggle="tooltip" style="color: #E00000"></i>
+		            </a>
+				  </span>
+			    </div>
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Download .mp3" href="">
+		            <i class="fa fa-download" style="color: #E00000"></i>
+		          </a>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>7</strong></td>
+			<td></td>
+			<td>On ili Ja</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Audio HQ" target="_blank" href="">
+		            <i class="fa fa-music" style="color: #E00000"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Text">
+		              <i class="fa fa-list" data-toggle="tooltip" style="color: #E00000"></i>
+		            </a>
+				  </span>
+			    </div>
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Download .mp3" href="">
+		            <i class="fa fa-download" style="color: #E00000"></i>
+		          </a>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>8</strong></td>
+			<td></td>
+			<td>Vojnikova Tuga</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Audio HQ" target="_blank" href="">
+		            <i class="fa fa-music" style="color: #E00000"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Text">
+		              <i class="fa fa-list" data-toggle="tooltip" style="color: #E00000"></i>
+		            </a>
+				  </span>
+			    </div>
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Download .mp3" href="">
+		            <i class="fa fa-download" style="color: #E00000"></i>
+		          </a>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		  <tr>
+		    <td><strong>9</strong></td>
+			<td></td>
+			<td>Pesma Šapcu</td>
+			<td>
+			  <div class="row">
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Audio HQ" target="_blank" href="">
+		            <i class="fa fa-music" style="color: #E00000"></i>
+		          </a>
+			    </div>
+			    <div class="col-xs-2">
+				  <span data-toggle="modal" data-target="">
+			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Text">
+		              <i class="fa fa-list" data-toggle="tooltip" style="color: #E00000"></i>
+		            </a>
+				  </span>
+			    </div>
+			    <div class="col-xs-2">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Download .mp3" href="">
+		            <i class="fa fa-download" style="color: #E00000"></i>
+		          </a>
+			    </div>
+			  </div>
+			</td>
+		  </tr>
+		</tbody>
+	  </table>
+	</div>
+	<div class="col-sm-4">
+	  <div class="sticky-top">
+	    <br>
+		<div class="card">
+	      <div class="container">
+	        <ul class="list-unstyled">
+		      <li><h5>Key:</h5></li>
+	          <li><i class="fa fa-music"></i>&nbsp;Listen to the song</li>
+			  <li><i class="fa fa-list"></i>&nbsp;Song text</li>
+		      <li><i class="fa fa-download"></i>&nbsp;Direct audio download</li>
+		  	  <li><i class="fa fa-video"></i>&nbsp;Official video</li>
+			  <br>
+			  <li><i class="fa fa-square" style="color: #E00000"></i>&nbsp; Known to exist, not found</li>
+			  <li><i class="fa fa-square" style="color: #E05400"></i>&nbsp; Existance unknown</li>
+			  <li><i class="fa fa-square" style="color: #E0E000"></i>&nbsp; Possibly unofficial</li>
+			  <li><i class="fa fa-square" style="color: #00E000"></i>&nbsp; Archived (use&nbsp;<i class="fa fa-square" style="color: #6A6A6A"></i>&nbsp;instead)</li>
+		      <li><i class="fa fa-square" style="color: #0000E0"></i>&nbsp; Partially found</li>
+			  <li><i class="fa fa-square" style="color: #E000E0"></i>&nbsp; <del>I don't know yet</del></li>
+			</ul>
+		  </div>
+		</div>
+		<br>
+	    <div class="card">
+	      <div class="container">
+	        <ul class="list-unstyled" >
+			  <li style="margin-top: 6px;">
+			    <a data-toggle="collapse" data-toggle="collapse" href="#redmusic" role="button" aria-expanded="false" aria-controls="redmusic">
+			      <i class="fa fa-music" style="color: #E00000"></i>&nbsp;<b>8 songs lost - Gitara album</b>
+				</a>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+</div>
+
+<footer>
+  <hr>
+  <div class="row">
+    <div class="col-md-2 offset-md-4">
+      <h6 class="text-center">©Anter11 2025</h6>
+	</div>
+	<div class="col-md-2">
+	  <a href="#"> <h6 class="text-right">Anter12</h6> </a>
+	</div>
+  </div>
+</footer>
+
+</body>
+
+</html>
