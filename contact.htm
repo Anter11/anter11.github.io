@@ -17,7 +17,7 @@
 	  padding-bottom: 0px; 
 	}
 	
-ul.dropdown-menu {
+	ul.dropdown-menu {
 	  padding-top: 5px;
       padding-right: 0px;
       padding-bottom: 5px;
@@ -117,14 +117,6 @@ ul.dropdown-menu {
 	  background-color: #E5E5E5 !important;
 	}
 	
-	.jumbotron {
-	  background-color: #823030;
-	  background-size: 750px 320px;
-	  height: 220px;
-	  background-repeat: no-repeat;
-	  backgrou0d-position: center;
-	}
-	
 	.brand {
       font-size: 20px;
 	  color: #303030;
@@ -140,23 +132,18 @@ ul.dropdown-menu {
       background-color: #E3E3E3;
     }
 	
-	body {
-      margin: 0;
-      font-family: Lato, "Helvetica Neue",Helvetica,Arial,sans-serif;
-      font-size: 16px;
-      line-height: 20px;
-      color: #303030;
-      background-color: #fff;
-    }
-	
 	body, body>.container>.row>.col-xs-4>.sticky-top>.card>.container>ul>li>a {
       margin: 0;
-      font-family: "Lato", "Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-family: "Lato", "Helvetica Neue", Helvetica,Arial,sans-serif;
       font-size: 16px;
       line-height: 20px;
       color: #303030;
 	  background-color: #FFFFFF;
     }
+	
+	.fa-film, .fa-compact-disc, .fa-image {
+	  font-size: 18px;
+	}
 	
 	h1, h2, h3, h4, h5 {
       margin: 10px 0;
@@ -174,6 +161,145 @@ ul.dropdown-menu {
 	h1 {
 	  font-size: 38.5px;
 	}
+	
+	.page-header {
+      padding-bottom: 15px;
+      margin: 25px 0 25px;
+      border-bottom: 1px solid #eee;
+    }
+	
+	table {
+	  background-color: transparent;
+	  border-spacing: 0;
+	}
+	
+	.table-bordered {
+	  border: 1px solid #ddd;
+	  border-radius: 4px;
+	  border-left: 0;
+	  border-collapse: separate;
+	}
+	
+	.table-bordered thead:first-child tr:first-child>th:first-child, .table-bordered tbody:first-child tr:first-child>td:first-child, .table-bordered tbody:first-child tr:first-child>th:first-child {
+      border-top-left-radius: 4px;
+    }
+	
+	.table-bordered caption+thead tr:first-child th, .table-bordered caption+tbody tr:first-child th, .table-bordered caption+tbody tr:first-child td, .table-bordered colgroup+thead tr:first-child th, .table-bordered colgroup+tbody tr:first-child th, .table-bordered colgroup+tbody tr:first-child td, .table-bordered thead:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child td {
+      border-top: 0;
+	  border-bottom: 0;
+    }
+	
+	.table caption+thead tr:first-child th, .table caption+thead tr:first-child td, .table colgroup+thead tr:first-child th, .table colgroup+thead tr:first-child td, .table thead:first-child tr:first-child th, .table thead:first-child tr:first-child td {
+      border-top: 0;
+	  border-bottom: 0;
+    }
+	
+	.table-bordered th, .table-bordered td {
+      border-left: 1px solid #ddd;
+	  border-right: 0;
+	  border-bottom: 0;
+    }
+	
+	.table th, .table td {
+      padding: 8px;
+      line-height: 20px;
+      text-align: left;
+      vertical-align: top;
+      border-top: 1px solid #ddd;
+    }
+	
+	td>div {
+	  padding-left: 0px;
+	}
+	td>div>div>a, td>div>div>span>a {
+	  color: #6A6A6A;
+	}
+	td>div>div>a:hover, td>div>div>span>a:hover {
+	  color: #202020;
+	}
+	
+	.nav-link {
+	  display: inline;
+	  padding: 0px;
+	}
+	
+	.table-striped tbody>tr:hover {
+	  background-color: #E3E3E3;
+	}
+	
+	.table-striped tbody>tr:nth-child(odd)>td, .table-striped tbody>tr:nth-child(odd)>th {
+      background-color: #f6f6f6;
+    }
+	
+	.table-striped>tbody>tr:hover>* {
+      background-color: #ECECEC !important;
+    }
+	
+	.modal-content {
+	  width: 532px;
+	  height: 532px;
+	  background-color: #E0E0E0;
+	}
+	
+	.modal-body {
+	  width: 500px;
+	  height: 500px;
+	}
+	img {
+	  width: 500px;
+	  height: 500px;
+	}
+	
+	body {
+	  width: 1340px; !important
+	  min-width: 100%;
+	}
+	html {
+	  width: 1340px;
+	  min-width: 100%;
+	}
+	#mainbody {
+	  margin-left: 100px;
+	  margin-right: 100px;
+	  padding-left: 15px;
+	  padding-right: 15px;
+	  width: 1140px; !important
+	  min-width: 100%;
+	}
+	.container>.row {
+	  width: 1140px;
+	  xxmin-width: 100%;
+	}
+	td>.row {
+	  width: 108px;
+	  xxdisplay: block;
+	  xxmin-width: 100%;
+	}
+	td>.row>.col-xs-2 {
+	  padding-left: 15px;
+	  padding-right: 15px;
+	  width: 0px;
+	}
+	.row>.col-xs-8 {
+	  width: 760px;
+	  padding-left: 15px;
+	  padding-right: 15px;
+	}
+	.row>.col-xs-4 {
+	  width: 380px;
+	  padding-left: 15px;
+	  padding-right: 15px;
+	}
+	
+	.jumbotron {
+	  background-color: #823030;
+	  background-size: 750px 320px;
+	  height: 220px;
+	  background-repeat: no-repeat;
+	  background-position: center;
+	}
+	
+    }
   </style>
 </head>
 <body>
@@ -277,13 +403,26 @@ ul.dropdown-menu {
 	        <h4 class="text-center">Contact info:</h4>
 		  </div>
 		</div>
-	    <br>
 		<div class="card">
 	      <div class="container">
 	        <ul class="list-unstyled">
 	          <li><i class="fa fa-gamepad"></i>&nbsp;<u>Discord:</u> anter11 #9116</li>
 			  <li><i class="fa fa-play"></i>&nbsp;<u>Youtube:</u> Anter11 @anter11</li>
 			  <li><i class="fa fa-envelope"></i>&nbsp;<u>Email:</u> anter21minecraft@gmail.com</li>
+			</ul>
+		  </div>
+		</div>
+		<br>
+		<div class="card">
+	      <div class="container">
+	        <h4 class="text-center">Donate:</h4>
+		  </div>
+		</div>
+		<div class="card">
+	      <div class="container">
+	        <ul class="list-unstyled">
+	          <li><i class="fa fa-dollar-sign" style="width: 20px;"></i>&nbsp;<u>Paypal:</u> anter11 #9116</li>
+			  <li><i class="fa fa-money-bill"></i>&nbsp;<u>Patreon:</u> <a href="https://www.patreon.com/Anter11" style="color: #007BFF">patreon.com/Anter11</a></li>
 			</ul>
 		  </div>
 		</div>
