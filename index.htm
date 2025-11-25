@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Anter11 - Offical Site</title>
+  <title>Lost Media</title>
   <link rel="icon" type="image/x-icon" href="ico.png"/>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,56 +10,150 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    function pg1() {
-      var x = document.getElementById("page1");
-	  var xb = document.getElementById("page1b");
-	  var T = document.getElementById("page2");
-	  var Tb = document.getElementById("page2b");
-	  var U = document.getElementById("page3");
-	  var Ub = document.getElementById("page3b");
-      x.style.display = "block";
-	  xb.style.display = "block";
-	  T.style.display = "none";
-	  Tb.style.display = "none";
-	  U.style.display = "none";
-	  Ub.style.display = "none";
-    }
-    function pg2() {
-	  var x = document.getElementById("page1");
-	  var xb = document.getElementById("page1b");
-	  var T = document.getElementById("page2");
-	  var Tb = document.getElementById("page2b");
-	  var U = document.getElementById("page3");
-	  var Ub = document.getElementById("page3b");
-      x.style.display = "none";
-	  xb.style.display = "none";
-	  T.style.display = "block";
-	  Tb.style.display = "block";
-	  U.style.display = "none";
-	  Ub.style.display = "none";
-    }
-	function pg3() {
-      var x = document.getElementById("page1");
-	  var xb = document.getElementById("page1b");
-	  var T = document.getElementById("page2");
-	  var Tb = document.getElementById("page2b");
-	  var U = document.getElementById("page3");
-	  var Ub = document.getElementById("page3b");
-      x.style.display = "none";
-	  xb.style.display = "none";
-	  T.style.display = "none";
-	  Tb.style.display = "none";
-	  U.style.display = "block";
-	  Ub.style.display = "block";
-    }
-  </script>
   <style>
 	.navbar {
 	  background-image: linear-gradient(#FAFAFA, #E9E9E9);
 	  padding-top: 0px; 
 	  padding-bottom: 0px; 
 	}
+	
+	.navbar .nav>li {
+	  padding-top: 4px;
+	  padding-bottom: 4px;
+	}
+	
+	.navbar .nav>li>a {
+      float: right;
+      padding: 10px 15px 10px;
+      color: #6A6A6A;
+      text-decoration: none;
+      text-shadow: 0 1px 0 #fff;
+    }
+    .navbar .nav>li>a:hover {
+      color: #202020;
+      text-decoration: none;
+      background-color: transparent;
+    }
+	
+	.jumbotron {
+	  background-color: #823030;
+	  background-size: 750px 320px;
+	  height: 220px;
+	  background-repeat: no-repeat;
+	  backgrou0d-position: center;
+	}
+	
+	.brand {
+      font-size: 20px;
+	  color: #303030;
+	}
+	
+	li {
+      line-height: 20px;
+    }
+	.nav {
+	  float: right;
+	}
+	.nav-collapse ul.nav li:hover {
+      background-color: #E3E3E3;
+    }
+	
+	body {
+      margin: 0;
+      font-family: Lato, "Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      color: #303030;
+      background-color: #fff;
+    }
+	
+	body, body>.container>.row>.col-xs-4>.sticky-top>.card>.container>ul>li>a {
+      margin: 0;
+      font-family: "Lato", "Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      color: #303030;
+	  background-color: #FFFFFF;
+    }
+	
+	h1, h2, h3, h5, h5 {
+      margin: 10px 0;
+      font-family: inherit;
+      font-weight: bold;
+      line-height: 20px;
+      color: inherit;
+      text-rendering: optimizelegibility;
+    }
+	
+	h1, h2, h3 {
+      line-height: 40px;
+    }
+	
+	h1 {
+	  font-size: 38.5px;
+	}
+	
+		table {
+	  background-color: transparent;
+	  border-spacing: 0;
+	}
+	
+	.table-bordered {
+	  border: 1px solid #ddd;
+	  border-radius: 4px;
+	  border-left: 0;
+	  border-collapse: separate;
+	}
+	
+	.table-bordered thead:first-child tr:first-child>th:first-child, .table-bordered tbody:first-child tr:first-child>td:first-child, .table-bordered tbody:first-child tr:first-child>th:first-child {
+      border-top-left-radius: 4px;
+    }
+	
+	.table-bordered caption+thead tr:first-child th, .table-bordered caption+tbody tr:first-child th, .table-bordered caption+tbody tr:first-child td, .table-bordered colgroup+thead tr:first-child th, .table-bordered colgroup+tbody tr:first-child th, .table-bordered colgroup+tbody tr:first-child td, .table-bordered thead:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child td {
+      border-top: 0;
+	  border-bottom: 0;
+    }
+	
+	.table caption+thead tr:first-child th, .table caption+thead tr:first-child td, .table colgroup+thead tr:first-child th, .table colgroup+thead tr:first-child td, .table thead:first-child tr:first-child th, .table thead:first-child tr:first-child td {
+      border-top: 0;
+	  border-bottom: 0;
+    }
+	
+	.table-bordered th, .table-bordered td {
+      border-left: 1px solid #ddd;
+	  border-right: 0;
+	  border-bottom: 0;
+    }
+	
+	.table th, .table td {
+      padding: 8px;
+      line-height: 20px;
+      text-align: left;
+      vertical-align: top;
+      border-top: 1px solid #ddd;
+    }
+	
+	td>div {
+	  padding-left: 0px;
+	}
+	td>div>div>a, td>div>div>span>a {
+	  color: #6A6A6A;
+	}
+	td>div>div>a:hover, td>div>div>span>a:hover {
+	  color: #202020;
+	}
+	
+	.table-striped tbody>tr:hover {
+	  background-color: #E3E3E3;
+	}
+	
+	.table-striped tbody>tr:nth-child(odd)>td, .table-striped tbody>tr:nth-child(odd)>th {
+      background-color: #f6f6f6;
+    }
+	
+	.table-striped>tbody>tr:hover>* {
+      background-color: #ECECEC !important;
+    }
 	
 	ul.dropdown-menu {
 	  padding-top: 5px;
@@ -160,79 +254,6 @@
 	.dropdown-menu>li>a>div:hover {
 	  background-color: #E5E5E5 !important;
 	}
-	
-	.jumbotron {
-	  background-color: #823030;
-	  background-size: 750px 320px;
-	  height: 300px;
-	  background-repeat: no-repeat;
-	  background-position: center;
-	}
-	
-	.brand {
-      font-size: 20px;
-	  color: #303030;
-	}
-	
-	li {
-      line-height: 20px;
-    }
-	.nav {
-	  float: right;
-	}
-	.nav-collapse ul.nav li:hover {
-      background-color: #E3E3E3;
-    }
-	
-	body {
-      margin: 0;
-      font-family: Lato, "Helvetica Neue",Helvetica,Arial,sans-serif;
-      font-size: 16px;
-      line-height: 20px;
-      color: #303030;
-      background-color: #fff;
-    }
-	
-	body {
-	  width: 1340px; !important
-	  min-width: 100%;
-	}
-	html {
-	  width: 1340px;
-	  min-width: 100%;
-	}
-	#mainbody {
-	  margin-left: 100px;
-	  margin-right: 100px;
-	  padding-left: 15px;
-	  padding-right: 15px;
-	  width: 1140px; !important
-	  min-width: 100%;
-	}
-	.container>.row {
-	  width: 1140px;
-	  xxmin-width: 100%;
-	}
-	td>.row {
-	  width: 130px;
-	  xxdisplay: block;
-	  min-width: 100%;
-	}
-	td>.row>.col-xs-2 {
-	  padding-left: 15px;
-	  padding-right: 15px;
-	  width: 0px;
-	}
-	.row>.col-xs-8 {
-	  width: 760px;
-	  padding-left: 15px;
-	  padding-right: 15px;
-	}
-	.row>.col-xs-4 {
-	  width: 380px;
-	  padding-left: 15px;
-	  padding-right: 15px;
-	}
   </style>
 </head>
 <body>
@@ -286,13 +307,13 @@
         </a>
         <ul class="dropdown-menu">
           <li>
-            <a href="https://web.archive.org/web/20160207075718/https://oc.tc/leaderboard">
+            <a href="">
               <i class="flag-icon flag-icon-ad"></i>
               English
             </a>
           </li>
           <li>
-            <a href="/web/20160207075718/http://oc.tc/channels">
+            <a href="">
               <i class="flag flag-sr"></i>
               Serbian 
             </a>
@@ -311,198 +332,192 @@
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-4 text-center" style="color: #E0E0E0; margin-top: 16px; text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;">Anter11 - Official Site</h1>
-	<br>
-    <p class="text-center" style="color: #262626; font-size: 24px; font-weight: 750;">Archiving and translating national music.</p>
+    <h1 class="display-4 text-center" style="color: #E0E0E0;
+            text-shadow: -1px 1px 0 #000,
+                         1px 1px 0 #000,
+                         1px -1px 0 #000,
+                         -1px -1px 0 #000;">Lost Media
+	</h1>
   </div>
 </div>
 </br>
 
-<div class="container" id="mainbody">
+<div class="container">
   <div class="row">
-    <div class="col-sm-12" style="width: 1140px; padding-left: 15px; padding-right: 15px">
-	  <h2 class="text-center" style="width: 1110px"><b>ꒌ</b>&nbsp;<i>"With faith in God, freedom or death"</i>&nbsp;<b>ꒌ</b></h2>
-	</div>
-  </div>
-  </br>
-  <div class="row">
-    <div class="col-xs-9" style="width: 855px; padding-left: 15px; padding-right:15px">
-	  <h4>Latest Content</h4>
-	  </br>
-	  <div class="row">
-	    <div class="col-xs-6" style="width: 427.5px; padding-left: 15px; padding-right: 15px">
-		  <div class="card">
-            <div class="card-header">Latvju Atriebēji - Latvian Forest Brother song</div>
-            <div class="card-body">
-		      <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IUT7pFG7jjY" allowfullscreen></iframe>
-              </div>
-		    </div>
-          </div>
-		</div>
-	    <div class="col-xs-6" style="width: 427.5px; padding-left: 15px; padding-right: 15px">
-		  <div class="card">
-            <div class="card-header">Napred Rudar - Anthem of FK Rudar Ugljevik</div>
-            <div class="card-body">
-		      <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HwAILgfCIfw" allowfullscreen></iframe>
-              </div>
-		    </div>
-          </div>
-		</div>
-	  </div>
-	  <hr>
-	  <h4>Latest Additons</h4>
-	  <ul class="list-group" style="width: 825px;">
-	    <li class="list-group-item">
-		  <ul class="list-unstyled">
-			<li>Added Superton albums up to #9607</li>
-			<li>Added Nine Trade albums up to #9306</li>
-			<li>Added Mile Delija</li>
-		  </ul>
-		</li>
-	    <li class="list-group-item">
-		  <ul class="list-unstyled">
-			<li>Added Superton albums up to #9603</li>
-			<li>Added Dragan Simijonović and Ranko Spajić</li>
-		  </ul>
-		</li>
-        <li class="list-group-item">
-		  <ul class="list-unstyled">
-			<li>Added Superton ablums up to #9601</li>
-			<li>Added Orphan/Unknown songs</li>
-		  </ul>
-		</li>
-		<li class="list-group-item">
-		  <ul class="list-unstyled">
-			<li>Fixed mobile formatting (again)</li>
-			<li>Higher quality Dragan Šaulić and Vasvija songs</li>
-		  </ul>
-		</li>
-      </ul>
-	  <hr>
-	  <div class="row">
-	    <div class="col-sm-3">
-		  <h4>Popular Videos</h4>
-		</div>
-		<div class="col-sm-3">
-	      <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="page-item" onclick="pg1()"><a class="page-link">1</a></li>
-              <li class="page-item" onclick="pg2()"><a class="page-link">2</a></li>
-              <li class="page-item" onclick="pg3()"><a class="page-link">3</a></li>
-              <li class="page-item">
-                <a class="page-link" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-		</div>
-	  </div>
-	  <div class="row">
-	    <div class="col-xs-6" id="page1" style="width: 427.5px; padding-left: 15px; padding-right: 15px">
-		  <div class="card">
-            <div class="card-header">Bunkurs 13. - Vilki</div>
-            <div class="card-body">
-		      <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bOCItMkz1Kk" allowfullscreen></iframe>
-              </div>
-		    </div>
-          </div>
-		</div>
-	    <div class="col-xs-6" id="page1b" style="width: 427.5px; padding-left: 15px; padding-right: 15px">
-		  <div class="card">
-            <div class="card-header">Kurzemes Pēdējie Leģiōnāri - Vilki</div>
-            <div class="card-body">
-		      <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vuLmLB2fedw" allowfullscreen></iframe>
-              </div>
-		    </div>
-          </div>
-		</div>
-	  </div>
-	  <div class="row">
-	    <div class="col-xs-6" id="page2" style="display:none" style="width: 427.5px; padding-left: 15px; padding-right: 15px">
-		  <div class="card">
-            <div class="card-header">The Heroes of Kosovo "Në Ditën e Flamurit"</div>
-            <div class="card-body">
-		      <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/V6hD0mz0BKs" allowfullscreen></iframe>
-              </div>
-		    </div>
-          </div>
-		</div>
-	    <div class="col-xs-6" id="page2b" style="display:none" style="width: 427.5px; padding-left: 15px; padding-right: 15px">
-		  <div class="card">
-            <div class="card-header">Himna HOS-a - Croatian song</div>
-            <div class="card-body">
-		      <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IEap-heWmh4" allowfullscreen></iframe>
-              </div>
-		    </div>
-          </div>
-		</div>
-	  </div>
-	  <div class="row">
-	    <div class="col-xs-6" id="page3" style="display:none" style="width: 427.5px; padding-left: 15px; padding-right: 15px">
-		  <div class="card">
-            <div class="card-header">Tik Kreiso - Anthem of the 15th Division</div>
-            <div class="card-body">
-		      <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NV8JSPLo194" allowfullscreen></iframe>
-              </div>
-		    </div>
-          </div>
-		</div>
-	    <div class="col-xs-6" id="page3b" style="display:none" style="width: 427.5px; padding-left: 15px; padding-right: 15px">
-		  <div class="card">
-            <div class="card-header">Слава Україні ! - Glory to Ukraine song</div>
-            <div class="card-body">
-		      <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DxqbUX39iPg" allowfullscreen></iframe>
-              </div>
-		    </div>
-          </div>
-		</div>
-	  </div>
-	  <hr>
-	  <h4>Resources and Links</h4>
-	  <ul>
-	    <li><a href="cirilica.htm">Learn Cyrillic</a></li>
-		<li><a href="https://serbzone.com/">Serbzone - serbian songs</a></li>
-		<li><a href="https://velikasrbija.net/">Velika Srbija - serbian songs</a></li>
-	  </ul>
-	</div>
-    <div class="col-xs-3" style="width: 285px; padding-left: 15px; padding-right 15px">
-	  <div class="sticky-top">
-	    <br>
-	    <div class="card">
-	      <h4 class="text-center">English</h4>
-	    </div>
-	    </br>
-	    <div class="card">
-	      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Patch_of_the_Army_of_Republika_Srpska.svg/1200px-Patch_of_the_Army_of_Republika_Srpska.svg.png" class="img-fluid">
-	    </div>
-	  </div>
+    <div class="col-sm-12">
+	  <h2>Serbian</h2>
+	  <br>
+	  <h5><i class="fa fa-video" style="color:#E00000"></i>&nbsp;Lost Videos</h5>
+	  <table class="table table-bordered table-striped">
+	    <thead>
+		  <th width="16%">Singer</th>
+		  <th width="25%">Song</th>
+		  <th width="55%">More Info</th>
+		</thead>
+		<tbody>
+        </tbody>
+	  </table>
+	  <h5><i class="fa fa-video" style="color:#E05400"></i>&nbsp;Video Existance Unknown</h5>
+	  <table class="table table-bordered table-striped">
+	    <thead>
+		  <th width="16%">Singer</th>
+		  <th width="25%">Song</th>
+		  <th width="55%">More Info</th>
+		</thead>
+		<tbody>
+		  <tr>
+		    <td>Baja Mali Knindža</td>
+			<td>Srpski Dobrovoljac</td>
+			<td>There is a reference to a "Srpski Dobrovoljac" video in an article which describes the video opening with a Arkan's tiger. There exists a video like this but it is likely a fan creation.</td>
+		  </tr>
+		  <tr>
+		    <td>Baja Mali Knindža</td>
+			<td>Igraju se Delije</td>
+			<td>The same article has a reference to "Igraju se Delije" which describes 'The performer [Baja ?] is depicted soberly in a blazer'. If this video existed it is now lost.</td>
+		  </tr>
+        </tbody>
+	  </table>
+	  <h5><i class="fa fa-video" style="color:#E0E000"></i>&nbsp;Possibly Unofficial Videos</h5>
+	  <table class="table table-bordered table-striped">
+	    <thead>
+		  <th width="16%">Singer</th>
+		  <th width="25%">Song</th>
+		  <th width="55%">More Info</th>
+		</thead>
+		<tbody>
+		  <tr>
+		    <td>Baja Mali Knindža</td>
+			<td>Morem Plovi Jedna Mala Barka</td>
+			<td>A video can be found on Youtube. If official it could have aired on TV.</td>
+		  </tr>
+		  <tr>
+		    <td>Baja Mali Knindža</td>
+			<td>Srpski Dobrovoljac</td>
+			<td>There is a reference to a "Srpski Dobrovoljac" video in an article which describes the video opening with a Arkan's tiger. There exists a video like this but it is likely a fan creation.</td>
+		  </tr>
+        </tbody>
+	  </table>
+	  <h5><i class="fa fa-video" style="color:#0000E0"></i>&nbsp;Partially lost videos</h5>
+	  <table class="table table-bordered table-striped">
+	    <thead>
+		  <th width="16%">Singer</th>
+		  <th width="25%">Song</th>
+		  <th width="55%">More Info</th>
+		</thead>
+		<tbody>
+		  <tr>
+		    <td>Lepi Mića</td>
+			<td>Ratkovi Vojnici</td>
+			<td>The only known copy of the video has been found. It is in very poor quality and its source is unknown. The HD version is lost. It is unknown if it existed and if other similar videos existed.</td>
+		  </tr>
+		  <tr>
+		    <td>Minđušari</td>
+			<td>Ovo je Moja Zemlja</td>
+			<td>The existing video is fragmented and incomplete.</td>
+		  </tr>
+		  <tr>
+		    <td>Minđušari</td>
+			<td>Molitva</td>
+			<td>The first minute is availiable on Minđušari facebook page, the rest is lost.</td>
+		  </tr>
+		  <tr>
+		    <td>Minđušari</td>
+			<td>Maćeha</td>
+			<td>The first minute is availiable on Minđušari facebook page, the rest is lost.</td>
+		  </tr>
+		  <tr>
+		    <td>Minđušari</td>
+			<td>Nema Raja</td>
+			<td>The first 1:45 is availiable on Youtube, the rest is lost.</td>
+		  </tr>
+        </tbody>
+	  </table>
+	  <br>
+	  <h5><i class="fa fa-music" style="color:#E00000"></i>&nbsp;Lost songs</h5>
+	  <table class="table table-bordered table-striped">
+	    <thead>
+		  <th width="16%">Singer</th>
+		  <th width="25%">Song</th>
+		  <th width="55%">More Info</th>
+		</thead>
+		<tbody>
+		  <tr>
+		    <td>Mišo Bojić</td>
+			<td>Sa Tromeđe Brale "Tromedja"</td>
+			<td>There is only one known digitisation of the Mišo Bojić - Srpske Pesme 2 album, where this song comes from. It was once posted onto GeoCities by a user "semberac5" under the name "Tromedja" by "Milos Bojic". Using oocities or other web archives have either come up with nothing, or dead links. It is not known how to contact semberac5, or if other copies exist. See below.</td>
+		  </tr>
+		  <tr>
+		    <td>Neđo Mitrović</td>
+			<td>Birčanski Komandanti (Intrumental)</td>
+			<td>For some reason this song can't be found.</td>
+		  </tr>
+		  <tr>
+		    <td>Neđo Mitrović</td>
+			<td>Braća Krajišnici</td>
+			<td>This song and 6 more from it's album are lost. See below.</td>
+		  </tr>
+		  <tr>
+		    <td>Neđo Mitrović</td>
+			<td>Slavni Birač s Andrićem na Čelu</td>
+			<td>This song and 6 more from it's album are lost. See below.</td>
+		  </tr>
+		  <tr>
+		    <td>Neđo Mitrović</td>
+			<td>Tražim Ženu Crne Kose</td>
+			<td>This song and 6 more from it's album are lost. See below.</td>
+		  </tr>
+		  <tr>
+		    <td>Neđo Mitrović</td>
+			<td>Dok Fijuču Meci</td>
+			<td>This song and 6 more from it's album are lost. See below.</td>
+		  </tr>
+		  <tr>
+		    <td>Neđo Mitrović</td>
+			<td>Semberijo Srećna Budi</td>
+			<td>This song and 6 more from it's album are lost. See below.</td>
+		  </tr>
+		  <tr>
+		    <td>Neđo Mitrović</td>
+			<td>Na sred Gore Romanije</td>
+			<td>This song and 6 more from it's album are lost. See below.</td>
+		  </tr>
+		  <tr>
+		    <td>Pirgo</td>
+			<td>Posavina Srpska Zemlja</td>
+			<td>Pirgo's one war album "Neka Živi Krajina" was only digitised once, maybe twice. No record of this song being online can be found, though it must have existed at one point. It's possible that it disappeared because it has the same name as a more famous Koridor song. Although Pirgo's songs tend be known by 2 different names there are no unknown Pirgo songs floating around either. The previous song on the album (Brode Moj) cuts off slightly too short. See below.</td>
+		  </tr>
+        </tbody>
+	  </table>
+	  <h5><i class="fa fa-music" style="color:#E05400"></i>&nbsp;Unknown songs</h5>
+	  <table class="table table-bordered table-striped">
+	    <thead>
+		  <th width="16%">Singer</th>
+		  <th width="25%">Song</th>
+		  <th width="55%">More Info</th>
+		</thead>
+		<tbody>
+		  <tr>
+		    <td>Kosta Marić<br>Kosta Perić</td>
+			<td></td>
+			<td>Two unknown songs exist from Kosta Marić. One source calls the singer Kosta Perić. They sound as if they are from the same album. It is unknown if there is more songs from that album. See below.</td>
+		  </tr>
+        </tbody>
+		<tbody>
+		  <tr>
+		    <td>Mićo Kuzmanović</td>
+			<td></td>
+			<td>There are 5 availiable songs credited by Mićo Kuzmanović. Nothing is known about the singer besides him sharing the same name as a well known soccer player. There might be more songs on this album. Mićo Kuzmanović has a Youtube channel, where he sings occaisionally, but it isn't known if this is the same person. See below.</td>
+		  </tr>
+        </tbody>
+	  </table>
 	</div>
   </div>
   <hr>
 </div>
 
 <footer>
-  <div class="row">
-    <div class="col-md-2 offset-md-4">
-      <h6 class="text-center">©Anter11 2025</h6>
-	</div>
-	<div class="col-md-2">
-	  <a href="#"> <h6 class="text-right">Anter12</h6> </a>
-	</div>
+  <div>
+    <h6 class="text-center">©Anter11 2025</h6>
   </div>
 </footer>
 
