@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Boki Vidičevć</title>
-  <link rel="icon" type="image/x-icon" href="../../ico.png"/>
+  <title>Anter11 - Donate</title>
+  <link rel="icon" type="image/x-icon" href="ico.png"/>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -10,11 +10,6 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('[data-toggle="tooltip"]').tooltip();   
-    });
-  </script>
   <style>
 	.navbar {
 	  background-image: linear-gradient(#FAFAFA, #E9E9E9);
@@ -146,6 +141,10 @@
 	  background-color: #FFFFFF;
     }
 	
+	.fa-film, .fa-compact-disc, .fa-image {
+	  font-size: 18px;
+	}
+	
 	h1, h2, h3, h4, h5 {
       margin: 10px 0;
       font-family: inherit;
@@ -236,6 +235,21 @@
       background-color: #ECECEC !important;
     }
 	
+	.modal-content {
+	  width: 532px;
+	  height: 532px;
+	  background-color: #E0E0E0;
+	}
+	
+	.modal-body {
+	  width: 500px;
+	  height: 500px;
+	}
+	img {
+	  width: 500px;
+	  height: 500px;
+	}
+	
 	body {
 	  width: 1340px; !important
 	  min-width: 100%;
@@ -257,9 +271,9 @@
 	  xxmin-width: 100%;
 	}
 	td>.row {
-	  width: 130px;
+	  width: 108px;
 	  xxdisplay: block;
-	  min-width: 100%;
+	  xxmin-width: 100%;
 	}
 	td>.row>.col-xs-2 {
 	  padding-left: 15px;
@@ -277,14 +291,21 @@
 	  padding-right: 15px;
 	}
 	
+	.jumbotron {
+	  background-color: #823030;
+	  background-size: 750px 320px;
+	  height: 220px;
+	  background-repeat: no-repeat;
+	  background-position: center;
+	}
+	
     }
   </style>
 </head>
-
 <body>
 
 <nav class="navbar navbar-light">
-  <a class="navbar-brand" href="../superton.htm">Anter11 > Serbian Archive > Superton</a>
+  <a class="navbar-brand" href="index.htm">Anter11</a>
   <div class="nav-collapse justify-content-end">
     <ul class="nav">
       <li class="nav-item">
@@ -301,7 +322,7 @@
         </a>
         <ul class="dropdown-menu">
           <li>
-            <a href="../../archive_sr.htm">
+            <a href="archive_sr.htm">
               Serbian
             </a>
           </li>
@@ -332,20 +353,20 @@
         </a>
         <ul class="dropdown-menu">
           <li>
-            <a href="-p-https://web.archive.org/web/20160207075718/https://oc.tc/leaderboard">
+            <a href="">
               <i class="flag-icon flag-icon-ad"></i>
               English
             </a>
           </li>
           <li>
-            <a href="/web/20160207075718/http://oc.tc/channels">
+            <a href="">
               <i class="flag flag-sr"></i>
               Serbian 
             </a>
           </li>
 		</ul>
 		<li>
-          <a href="../../contact.htm">
+          <a href="contact.htm">
             <i class="fa fa-list-ol"></i>
             About Me
           </a>
@@ -355,138 +376,58 @@
   </div>
 </nav>
 
-<div class="container" id="mainbody">
-  <div class="page-header">
-    <h1>Boki Vidičević</h1>
+<div class="jumbotron jumbotron-fluid" style="margin-bottom: 0px">
+  <div class="container">
+    <h1 class="display-4 text-center" style="color: #E0E0E0;
+            text-shadow: -1px 1px 0 #000,
+                         1px 1px 0 #000,
+                         1px -1px 0 #000,
+                         -1px -1px 0 #000;">Donate
+	</h1>
   </div>
-  <div class="row" id="stk100XX">
-    <div class="col-xs-8">
-	  <h4>1. Život Boema<span class="float-right"><a href="https://www.youtube.com/playlist?list=PLvXwYm_9R71vGF2dpfLK1bwD4aO3bTT5e">2000</a></span></h4>
-	  <table class="table table-bordered table-striped">
-	    <thead>
-		  <th width="5%">#</th>
-		  <th width="10%">Time</th>
-		  <th>Song</th>
-		  <th width="18%">Links</th>
-		</thead>
-		<tbody>
-		  <tr>
-		    <td><strong>?</strong></td>
-			<td>3:39</td>
-			<td>Teci Reko Sano</td>
-			<td>
-			  <div class="row">
-			    <div class="col-xs-2">
-			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Audio HQ" target="_blank" href="https://drive.google.com/file/d/1DMA4toKXGqcppH_1iQnFsCoRgGO2VRR-/view?usp=drive_link">
-		            <i class="fa fa-music"></i>
-		          </a>
-			    </div>
-			    <div class="col-xs-2">
-				  <span data-toggle="modal" data-target="#music">
-			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Text">
-		              <i class="fa fa-list" data-toggle="tooltip"></i>
-		            </a>
-				  </span>
-			    </div>
-			    <div class="col-xs-2">
-			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Download .mp3" href="">
-		            <i class="fa fa-download"></i>
-		          </a>
-			    </div>
-			  </div>
-			</td>
-		  </tr>
-		  <tr>
-		    <td><strong>?</strong></td>
-			<td>3:39</td>
-			<td>Suze na Jastuku</td>
-			<td>
-			  <div class="row">
-			    <div class="col-xs-2">
-			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Audio HQ" target="_blank" href="https://drive.google.com/file/d/165TeUn-rmPKsRZCx77di-ituYLgjuv_G/view?usp=drive_link">
-		            <i class="fa fa-music"></i>
-		          </a>
-			    </div>
-			    <div class="col-xs-2">
-				  <span data-toggle="modal" data-target="#music">
-			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Text">
-		              <i class="fa fa-list" data-toggle="tooltip"></i>
-		            </a>
-				  </span>
-			    </div>
-			    <div class="col-xs-2">
-			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Download .mp3" href="">
-		            <i class="fa fa-download"></i>
-		          </a>
-			    </div>
-			  </div>
-			</td>
-		  </tr>
-		  <tr>
-		    <td colspan="3">The existance of other songs on this album is unknown.</td>
-			<td>
-			  <div class="row">
-			    <div class="col-xs-2">
-			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Audio HQ" target="_blank" href="">
-		            <i class="fa fa-music" style="color: #E05400"></i>
-		          </a>
-			    </div>
-			    <div class="col-xs-2">
-				  <span data-toggle="modal" data-target="#music">
-			        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Text">
-		              <i class="fa fa-list" data-toggle="tooltip" style="color: #E05400"></i>
-		            </a>
-				  </span>
-			    </div>
-			    <div class="col-xs-2">
-			      <a class="nav-link" data-toggle="tooltip" data-placement="top" title="Download .mp3" href="">
-		            <i class="fa fa-download" style="color: #E05400"></i>
-		          </a>
-			    </div>
-			  </div>
-			</td>
-		  </tr>
-		</tbody>
-	  </table>
+</div>
+<div class="text-center">
+  <h6 style="background-color: #F1F1F1; padding-top: 16px; padding-bottom: 16px; color: #333333; border-top: 1px; border-bottom: 1px; border-left: 0px; border-right: 0px; border-style: solid; border-color: #E0E0E0">Buying rare albums is expensive. Archiving thousands of songs is very time consuming. I appreciate any donation, they help keep me motivated.</h6>
+</div>
+</br>
+
+<div class="container" id="mainbody">
+  <div class="row">
+	<div class="col-xs-4 offset-sm-1">
+	  <div class="card">
+	    <div class="card-header"><strong>Buy me a Coffee<span style="color: #6A6A6A">&nbsp; (Preferred)</span></strong></div>
+		<ul class="list-group list-group-flush">
+          <li class="list-group-item"><a href="https://buymeacoffee.com/anter11" target="_blank"><img src="icocoffee.png" class="img-fluid"></a></li>
+		  <li class="list-group-item" style="padding-top: 0px; padding-bottom: 0px">
+		    <div class="row justify-content-center">
+		      <h5><a href="https://buymeacoffee.com/anter11" target="_blank"><span class="badge badge-secondary" style="background-color: #B00000">Click here</span></a></h5>
+			</div>
+		  </li>
+        </ul>
+	  </div>
 	</div>
-	<div class="col-xs-4">
-	  <div class="sticky-top">
-	    <br>
-		<div class="card">
-	      <div class="container">
-	        <ul class="list-unstyled">
-		      <li><h5>Key:</h5></li>
-	          <li><i class="fa fa-music"></i>&nbsp;Listen to the song</li>
-			  <li><i class="fa fa-list"></i>&nbsp;Song text</li>
-		      <li><i class="fa fa-download"></i>&nbsp; <del>Direct audio download</del></li>
-		  	  <li><i class="fa fa-video"></i>&nbsp;Official video</li>
-			  <br>
-			  <li><i class="fa fa-square" style="color: #E00000"></i>&nbsp; Known to exist, not found</li>
-			  <li><i class="fa fa-square" style="color: #E05400"></i>&nbsp; Existance unknown</li>
-			  <li><i class="fa fa-square" style="color: #E0E000"></i>&nbsp; Possibly unofficial</li>
-			  <li><i class="fa fa-square" style="color: #00E000"></i>&nbsp; Archived (use&nbsp;<i class="fa fa-square" style="color: #6A6A6A"></i>&nbsp;instead)</li>
-		      <li><i class="fa fa-square" style="color: #0000E0"></i>&nbsp; Partially found</li>
-			  <li><i class="fa fa-square" style="color: #E000E0"></i>&nbsp; <del>I don't know yet</del></li>
-			</ul>
-		  </div>
-		</div>
+	<div class="col-xs-4 offset-sm-2">
+	  <div class="card">
+	    <div class="card-header"><strong>Patreon</strong></div>
+		<ul class="list-group list-group-flush">
+          <li class="list-group-item"><a href="https://www.patreon.com/Anter11" target="_blank"><img src="icopatreon.png" class="img-fluid"></a></li>
+		  <li class="list-group-item" style="padding-top: 0px; padding-bottom: 0px">
+		    <div class="row justify-content-center">
+		      <h5><a href="https://www.patreon.com/Anter11" target="_blank"><span class="badge badge-secondary" style="background-color: #0000B0">Click here</span></a></h5>
+			</div>
+		  </li>
+        </ul>
 	  </div>
 	</div>
   </div>
+  <hr>
 </div>
 
 <footer>
-  <hr>
-  <div class="row">
-    <div class="col-md-2 offset-md-4">
-      <h6 class="text-center">©Anter11 2025</h6>
-	</div>
-	<div class="col-md-2">
-	  <a href="#"> <h6 class="text-right">Anter12</h6> </a>
-	</div>
+  <div>
+    <h6 class="text-center">©Anter11 2025</h6>
   </div>
 </footer>
 
 </body>
-
 </html>
